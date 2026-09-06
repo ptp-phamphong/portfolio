@@ -68,6 +68,10 @@ NEXT_PUBLIC_SITE_URL=https://your-domain.com
 
 Then `npm run build`.
 
+## Related
+
+[LifeHub](https://github.com/ptp-phamphong/LifeHub) — the full-stack app (ASP.NET Core + Angular + React Native) running on the same Raspberry Pi that serves this site. The visitor counter here posts to its API.
+
 ## Credits
 
 Based on the [portfolio template](https://github.com/Sofiane-Bahmed/portfolio-template) by Sofiane Bahmed, used under the MIT License (see `LICENSE`).
