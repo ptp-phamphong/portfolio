@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  /* One brand gradient, defined per theme, used by the hero heading, the navbar
+     brand and the animated section headings. Dark mode lifts the stops so they
+     stay legible against the near-black background. */
+  :root {
+    --brand-from: #0062d6;
+    --brand-via: #7828c8;
+    --brand-to: #0062d6;
+  }
+
+  .dark {
+    --brand-from: #67e8f9;
+    --brand-via: #c4b5fd;
+    --brand-to: #67e8f9;
+  }
+}
+
+@layer components {
+  .text-brand-gradient {
+    @apply bg-clip-text text-transparent;
+    background-image: linear-gradient(
+      90deg,
+      var(--brand-from) 0%,
+      var(--brand-via) 50%,
+      var(--brand-to) 100%
+    );
+  }
+}
