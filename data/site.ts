@@ -15,12 +15,12 @@ export const SITE = {
   social: {
     linkedin: {
       handle: "phong-pham-thanh",
-      url: "https://www.linkedin.com/in/phong-pham-thanh-1747b8270/",
+      url: "https://www.linkedin.com/in/phong-phạm-thanh-1747b8270/",
       icon: "mdi:linkedin",
     },
     github: {
       handle: "phong-pham-thanh",
-      url: "https://github.com/phong-pham-thanh",
+      url: "https://github.com/ptp-phamphong",
       icon: "mdi:github",
     },
     facebook: {
@@ -32,6 +32,48 @@ export const SITE = {
   research: {
     url: "https://thanhhungqb.github.io/iaslab/research/",
   },
+  /**
+   * Projects I've shipped and can show. Language-invariant facts only —
+   * URLs, tech tags, icons and the demo login live here; the title and
+   * description for each project are translated in the dictionaries, keyed
+   * by `key`. `demo` carries throwaway credentials for a public sandbox
+   * account, so it's safe to display.
+   */
+  projects: [
+    {
+      key: "lifehub",
+      icon: "lucide:layout-dashboard",
+      image: "/projects/lifehub.png",
+      tech: [
+        { name: "Angular", icon: "logos:angular-icon" },
+        { name: ".NET", icon: "logos:dotnet" },
+        { name: "C#", icon: "logos:c-sharp" },
+        { name: "MySQL", icon: "logos:mysql-icon" },
+        { name: "Expo", icon: "simple-icons:expo" },
+      ],
+      demo: {
+        url: "https://demo.ptp-phamphong.com/",
+        username: "demo",
+        password: "1234",
+      },
+      repo: "https://github.com/ptp-phamphong/LifeHub",
+    },
+    {
+      key: "portfolio",
+      icon: "lucide:globe",
+      image: "/projects/portfolio.jpg",
+      tech: [
+        { name: "Next.js", icon: "logos:nextjs-icon" },
+        { name: "React", icon: "logos:react" },
+        { name: "TypeScript", icon: "logos:typescript-icon" },
+        { name: "Tailwind CSS", icon: "logos:tailwindcss-icon" },
+      ],
+      live: {
+        url: "https://ptp-phamphong.com/",
+      },
+      repo: "https://github.com/ptp-phamphong/portfolio",
+    },
+  ],
   /** Tool names and icons are proper nouns — the same in both languages. */
   tech: {
     frontend: [
@@ -61,3 +103,4 @@ export const SITE = {
 } as const;
 
 export type TechKey = keyof typeof SITE.tech;
+export type ProjectKey = (typeof SITE.projects)[number]["key"];

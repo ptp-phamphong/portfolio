@@ -28,6 +28,11 @@ export const Navigation = () => {
   const menuItems = [
     { name: dict.nav.home, href: path("/"), icon: "lucide:home" },
     { name: dict.nav.about, href: path("/about"), icon: "lucide:user" },
+    {
+      name: dict.nav.projects,
+      href: path("/projects"),
+      icon: "lucide:folder-git-2",
+    },
     { name: dict.nav.contact, href: path("/contact"), icon: "lucide:send" },
   ];
 

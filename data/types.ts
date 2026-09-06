@@ -1,4 +1,4 @@
-import { TechKey } from "@/data/site";
+import { ProjectKey, TechKey } from "@/data/site";
 
 export interface FocusItem {
   title: string;
@@ -21,6 +21,13 @@ export interface TechGroup {
   description: string;
 }
 
+/** Translated copy for a project; `key` maps into SITE.projects for the facts. */
+export interface ProjectContent {
+  key: ProjectKey;
+  title: string;
+  description: string;
+}
+
 /**
  * Every user-facing string. Adding a language means adding one file that
  * satisfies this interface — TypeScript will flag anything left untranslated.
@@ -32,6 +39,7 @@ export interface Dictionary {
   nav: {
     home: string;
     about: string;
+    projects: string;
     contact: string;
   };
 
@@ -69,6 +77,20 @@ export interface Dictionary {
     technologies: TechGroup[];
   };
 
+  projects: {
+    heading: string;
+    description: string;
+    labels: {
+      demoAccount: string;
+      username: string;
+      password: string;
+      visitDemo: string;
+      visitSite: string;
+      viewCode: string;
+    };
+    items: ProjectContent[];
+  };
+
   contact: {
     heading: string;
     labels: {
@@ -90,6 +112,7 @@ export interface Dictionary {
 
   morphingTexts: {
     about: string[];
+    projects: string[];
     contact: string[];
   };
 }

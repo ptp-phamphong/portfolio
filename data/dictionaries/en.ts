@@ -8,6 +8,7 @@ export const en: Dictionary = {
   nav: {
     home: "Home",
     about: "About",
+    projects: "Projects",
     contact: "Contact",
   },
 
@@ -141,6 +142,34 @@ export const en: Dictionary = {
     ],
   },
 
+  projects: {
+    heading: "Things I've built",
+    description:
+      "A few projects I've taken from an empty repository to something running live on the internet. Feel free to open them and have a look.",
+    labels: {
+      demoAccount: "Demo account",
+      username: "Username",
+      password: "Password",
+      visitDemo: "Open live demo",
+      visitSite: "Visit site",
+      viewCode: "View code",
+    },
+    items: [
+      {
+        key: "lifehub",
+        title: "LifeHub",
+        description:
+          "A personal life-management app I built end to end and run on a Raspberry Pi behind my own domain — an Angular SPA and a mobile app on top of an ASP.NET Core API and MariaDB. It handles expense tracking, notes and daily tools, with full authentication. The demo below is a self-resetting sandbox, so log in and explore freely.",
+      },
+      {
+        key: "portfolio",
+        title: "Portfolio",
+        description:
+          "This very site. A bilingual (English / Vietnamese) portfolio built with Next.js as a fully static export, deployed alongside LifeHub on the same Raspberry Pi. Light and dark themes, animated sections, and a clean data-driven content layer.",
+      },
+    ],
+  },
+
   contact: {
     heading:
       "I'm always glad to discuss new projects, technical challenges, or potential collaboration.",
@@ -164,6 +193,7 @@ export const en: Dictionary = {
 
   morphingTexts: {
     about: ["Curious", "Full-stack", "Developer"],
+    projects: ["Things", "I've", "Built"],
     contact: ["Get", "In", "Touch"],
   },
 };

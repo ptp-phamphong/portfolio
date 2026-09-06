@@ -7,6 +7,7 @@ export const vi: Dictionary = {
   nav: {
     home: "Trang chủ",
     about: "Giới thiệu",
+    projects: "Dự án",
     contact: "Liên hệ",
   },
 
@@ -139,6 +140,34 @@ export const vi: Dictionary = {
     ],
   },
 
+  projects: {
+    heading: "Những sản phẩm tôi đã làm",
+    description:
+      "Một vài dự án tôi đã tự tay xây dựng từ một repo trống cho đến khi vận hành thực tế trên internet. Bạn có thể mở ra và trải nghiệm thử.",
+    labels: {
+      demoAccount: "Tài khoản demo",
+      username: "Tên đăng nhập",
+      password: "Mật khẩu",
+      visitDemo: "Mở bản demo",
+      visitSite: "Xem trang web",
+      viewCode: "Xem mã nguồn",
+    },
+    items: [
+      {
+        key: "lifehub",
+        title: "LifeHub",
+        description:
+          "Ứng dụng quản lý cuộc sống cá nhân tôi tự phát triển trọn vẹn và vận hành trên Raspberry Pi với tên miền riêng — một SPA Angular và ứng dụng di động chạy trên API ASP.NET Core cùng MariaDB. Ứng dụng gồm quản lý chi tiêu, ghi chú và các công cụ hằng ngày, có đầy đủ xác thực đăng nhập. Bản demo bên dưới là môi trường thử nghiệm tự làm mới, nên bạn cứ đăng nhập và khám phá thoải mái.",
+      },
+      {
+        key: "portfolio",
+        title: "Portfolio",
+        description:
+          "Chính là trang web này. Một portfolio song ngữ (Anh / Việt) xây bằng Next.js dưới dạng xuất tĩnh hoàn toàn, triển khai cùng LifeHub trên cùng một Raspberry Pi. Có giao diện sáng/tối, hiệu ứng chuyển động và tầng nội dung tách bạch, dễ bảo trì.",
+      },
+    ],
+  },
+
   contact: {
     heading:
       "Tôi luôn sẵn sàng trao đổi về các dự án mới, bài toán kỹ thuật hoặc cơ hội hợp tác.",
@@ -162,6 +191,7 @@ export const vi: Dictionary = {
 
   morphingTexts: {
     about: ["Tò mò", "Full-stack", "Lập trình"],
+    projects: ["Sản phẩm", "tôi đã", "làm ra"],
     contact: ["Kết nối", "Trao đổi", "Hợp tác"],
   },
 };

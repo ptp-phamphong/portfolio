@@ -42,3 +42,4 @@ next-env.d.ts
 
 # original personal photos, not used by the site (public/profile.jpg is the one in use)
 /My_info
+temp_running_process/
