@@ -69,8 +69,16 @@ export const vi: Dictionary = {
     ],
     sections: {
       education: "Học vấn",
+      certifications: "Chứng chỉ",
       experience: "Kinh nghiệm",
       skills: "Kỹ năng",
+    },
+    certifications: {
+      description:
+        "Các chứng chỉ Microsoft về thiết kế giải pháp Power Platform, phân tích yêu cầu nghiệp vụ và xây dựng AI agent trên Copilot Studio.",
+      issuer: "Microsoft",
+      earned: "Đạt được",
+      verify: "Xác minh chứng chỉ",
     },
     education: [
       {

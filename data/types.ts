@@ -69,8 +69,16 @@ export interface Dictionary {
     description: string[];
     sections: {
       education: string;
+      certifications: string;
       experience: string;
       skills: string;
+    };
+    /** Labels for the certification cards; the credentials live in SITE. */
+    certifications: {
+      description: string;
+      issuer: string;
+      earned: string;
+      verify: string;
     };
     education: TimelineEntry[];
     experience: TimelineEntry[];

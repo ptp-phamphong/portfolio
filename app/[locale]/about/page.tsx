@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 
+import { Certifications } from "@/components/about/certifications";
 import { ProfileCard } from "@/components/about/profile-card";
 import { EducationTimeline } from "@/components/about/timelines/education-timeline";
 import { ExperienceTimeline } from "@/components/about/timelines/experience-timeline";
@@ -42,6 +43,10 @@ export default async function AboutPage({ params }: PageProps) {
       <EducationTimeline
         education={about.education}
         title={about.sections.education}
+      />
+      <Certifications
+        labels={about.certifications}
+        title={about.sections.certifications}
       />
       <ExperienceTimeline
         experience={about.experience}

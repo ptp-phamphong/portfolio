@@ -74,6 +74,43 @@ export const SITE = {
       repo: "https://github.com/ptp-phamphong/portfolio",
     },
   ],
+  /**
+   * Microsoft certifications. Credential and exam names are official proper
+   * nouns, so they stay in English in every locale. `verifyUrl` is a public
+   * Microsoft Learn transcript share link; the PL exams and AB-620 were taken
+   * on different Learn accounts, hence two different transcripts. Badges are
+   * Microsoft's official level badges (associate / expert).
+   */
+  certifications: [
+    {
+      name: "Power Platform Solution Architect Expert",
+      exam: "PL-600",
+      examTitle: "Microsoft Power Platform Solution Architect",
+      badge: "/certifications/expert.svg",
+      earned: "03/2026",
+      verifyUrl:
+        "https://learn.microsoft.com/en-us/users/phongphmthanh-8887/transcript/v0y96aynqk3jz4o",
+    },
+    {
+      name: "AI Agent Builder Associate",
+      exam: "AB-620",
+      examTitle:
+        "Designing and Building Integrated AI Agent Solutions in Copilot Studio",
+      badge: "/certifications/associate.svg",
+      earned: "11/2026",
+      verifyUrl:
+        "https://learn.microsoft.com/en-us/users/phongphamthanh-2030/transcript/vpjz3s1gwz2rmzj",
+    },
+    {
+      name: "Power Platform Functional Consultant Associate",
+      exam: "PL-200",
+      examTitle: "Microsoft Power Platform Functional Consultant",
+      badge: "/certifications/associate.svg",
+      earned: "03/2026",
+      verifyUrl:
+        "https://learn.microsoft.com/en-us/users/phongphmthanh-8887/transcript/v0y96aynqk3jz4o",
+    },
+  ],
   /** Tool names and icons are proper nouns — the same in both languages. */
   tech: {
     frontend: [

@@ -70,8 +70,16 @@ export const en: Dictionary = {
     ],
     sections: {
       education: "Education",
+      certifications: "Certifications",
       experience: "Experience",
       skills: "Skills",
+    },
+    certifications: {
+      description:
+        "Microsoft credentials covering Power Platform solution design, business requirements, and AI agents built in Copilot Studio.",
+      issuer: "Microsoft",
+      earned: "Earned",
+      verify: "Verify credential",
     },
     education: [
       {
