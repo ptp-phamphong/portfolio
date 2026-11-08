@@ -84,7 +84,7 @@ export const en: Dictionary = {
     education: [
       {
         title: "Ho Chi Minh City University of Technology (HCMUT)",
-        date: "Since 2016",
+        date: "2020 – 2024",
         icon: "mdi:school",
         description:
           "Computer Science. The foundations I apply daily: data structures, algorithms, software engineering and databases.",
@@ -100,25 +100,25 @@ export const en: Dictionary = {
     experience: [
       {
         title: "Full-stack Developer · Precio Fishbone",
-        date: "2023 – Present",
+        date: "06/2023 – Present",
         icon: "mdi:briefcase",
         description:
           "Building and maintaining web applications across the full stack, from feature design through implementation and release. Working in C#/.NET on the back end and Angular and React on the front end.",
       },
       {
-        title: "Sales Consultant · 1Office",
-        date: "2021 – 2022",
-        icon: "mdi:handshake-outline",
-        description:
-          "Advised businesses on 1Office's management software. Two years of working directly with customers on their operational challenges gave me a clear view of where software requirements originate — a perspective I continue to apply in engineering.",
-      },
-      {
-        title: "Research Assistant · IAS Lab",
-        date: "01/2022 - 09/2022",
+        title: "Research Assistant · IAS Lab, HCMUT",
+        date: "01/2022 – 09/2022",
         icon: "mdi:brain",
         description:
-          "Researched convolutional neural network models for facial emotion recognition. Preprocessed and normalised the FER2013 dataset, and evaluated deep learning frameworks and techniques to improve model accuracy.",
-        linkLabel: "Research overview",
+          "Researched convolutional neural network models for facial emotion recognition at Ho Chi Minh City University of Technology. Preprocessed and normalised the FER2013 dataset, and evaluated deep learning frameworks and techniques to improve model accuracy. Co-authored a peer-reviewed paper published by Springer in 2023.",
+        linkLabel: "Published paper (Springer, 2023)",
+      },
+      {
+        title: "Sales Consultant · 1Office",
+        date: "03/2021 – 01/2022",
+        icon: "mdi:handshake-outline",
+        description:
+          "Advised businesses on 1Office's management software. Working directly with customers on their operational challenges gave me a clear view of where software requirements originate — a perspective I continue to apply in engineering.",
       },
     ],
     /** `key` maps into SITE.tech for the tool list + icons. */

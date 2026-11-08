@@ -29,8 +29,12 @@ export const SITE = {
       icon: "mdi:facebook",
     },
   },
+  /**
+   * The IAS Lab entry links to the published paper (Springer LNNS, 12th
+   * Conference on Information Technology and Its Applications, 2023).
+   */
   research: {
-    url: "https://thanhhungqb.github.io/iaslab/research/",
+    url: "https://link.springer.com/chapter/10.1007/978-3-031-36886-8_19",
   },
   /**
    * Projects I've shipped and can show. Language-invariant facts only —
@@ -125,6 +129,7 @@ export const SITE = {
       { name: "C#", icon: "logos:c-sharp" },
       { name: ".NET", icon: "logos:dotnet" },
       { name: "Java", icon: "logos:java" },
+      { name: "Python", icon: "logos:python" },
     ],
     databases: [
       { name: "SQL Server", icon: "simple-icons:microsoftsqlserver" },
