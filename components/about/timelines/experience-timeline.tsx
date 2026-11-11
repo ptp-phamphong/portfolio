@@ -40,6 +40,7 @@ export const ExperienceTimeline = ({
               ? { label: item.linkLabel, url: researchUrl }
               : undefined
           }
+          logo={item.logo}
           title={item.title}
           variants={itemVariants}
         />

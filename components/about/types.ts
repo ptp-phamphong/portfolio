@@ -20,6 +20,8 @@ export interface TimelineItemProps {
   title: string;
   date: string;
   description: string;
+  /** Replaces the plain dot marker with the organisation's logo. */
+  logo?: string;
   link?: TimelineLink;
   variants?: any;
   delay?: number;

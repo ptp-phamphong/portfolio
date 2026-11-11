@@ -86,6 +86,7 @@ export const en: Dictionary = {
         title: "Ho Chi Minh City University of Technology (HCMUT)",
         date: "2020 – 2024",
         icon: "mdi:school",
+        logo: "/logos/hcmut.png",
         description:
           "Computer Science. The foundations I apply daily: data structures, algorithms, software engineering and databases.",
       },
@@ -93,6 +94,7 @@ export const en: Dictionary = {
         title: "University of Economics Ho Chi Minh City (UEH)",
         date: "Since 2026",
         icon: "mdi:school-outline",
+        logo: "/logos/ueh.png",
         description:
           "Master's studies, continuing the Management Information Systems side of my background — where business requirements meet the software built to satisfy them.",
       },
@@ -102,6 +104,7 @@ export const en: Dictionary = {
         title: "Full-stack Developer · Precio Fishbone",
         date: "06/2023 – Present",
         icon: "mdi:briefcase",
+        logo: "/logos/precio-fishbone.svg",
         description:
           "Building and maintaining web applications across the full stack, from feature design through implementation and release. Working in C#/.NET on the back end and Angular and React on the front end.",
       },
@@ -109,6 +112,7 @@ export const en: Dictionary = {
         title: "Research Assistant · IAS Lab, HCMUT",
         date: "01/2022 – 09/2022",
         icon: "mdi:brain",
+        logo: "/logos/iaslab.png",
         description:
           "Researched convolutional neural network models for facial emotion recognition at Ho Chi Minh City University of Technology. Preprocessed and normalised the FER2013 dataset, and evaluated deep learning frameworks and techniques to improve model accuracy. Co-authored a peer-reviewed paper published by Springer in 2023.",
         linkLabel: "Published paper (Springer, 2023)",
@@ -117,6 +121,7 @@ export const en: Dictionary = {
         title: "Sales Consultant · 1Office",
         date: "03/2021 – 01/2022",
         icon: "mdi:handshake-outline",
+        logo: "/logos/1office.png",
         description:
           "Advised businesses on 1Office's management software. Working directly with customers on their operational challenges gave me a clear view of where software requirements originate — a perspective I continue to apply in engineering.",
       },

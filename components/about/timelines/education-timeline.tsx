@@ -33,6 +33,7 @@ export const EducationTimeline = ({
           date={item.date}
           delay={idx * 200}
           description={item.description}
+          logo={item.logo}
           title={item.title}
           variants={itemVariants}
         />

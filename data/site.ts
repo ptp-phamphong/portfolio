@@ -147,8 +147,10 @@ export const SITE = {
       { name: "Oracle", icon: "logos:oracle" },
     ],
     ai: [
-      { name: "Claude", icon: "simple-icons:claude" },
-      { name: "Codex", icon: "simple-icons:openai" },
+      { name: "Claude", icon: "logos:claude-icon" },
+      { name: "Codex", icon: "devicon:codex" },
+      // GitHub's Copilot mark is monochrome only; simple-icons uses currentColor,
+      // so it follows the light/dark theme instead of vanishing on one of them.
       { name: "GitHub Copilot", icon: "simple-icons:githubcopilot" },
     ],
   },

@@ -85,6 +85,7 @@ export const vi: Dictionary = {
         title: "Trường Đại học Bách khoa TP.HCM (HCMUT)",
         date: "2020 – 2024",
         icon: "mdi:school",
+        logo: "/logos/hcmut.png",
         description:
           "Ngành Khoa học Máy tính. Nền tảng tôi vận dụng mỗi ngày: cấu trúc dữ liệu, giải thuật, công nghệ phần mềm và cơ sở dữ liệu.",
       },
@@ -92,6 +93,7 @@ export const vi: Dictionary = {
         title: "Trường Đại học Kinh tế TP.HCM (UEH)",
         date: "Từ 2026",
         icon: "mdi:school-outline",
+        logo: "/logos/ueh.png",
         description:
           "Chương trình thạc sĩ, tiếp nối mảng Hệ thống Thông tin Quản lý — nơi bài toán nghiệp vụ và phần mềm gặp nhau.",
       },
@@ -101,6 +103,7 @@ export const vi: Dictionary = {
         title: "Lập trình viên Full-stack · Precio Fishbone",
         date: "06/2023 – Nay",
         icon: "mdi:briefcase",
+        logo: "/logos/precio-fishbone.svg",
         description:
           "Xây dựng và bảo trì các ứng dụng web trên toàn bộ stack, từ thiết kế tính năng đến triển khai và phát hành. Làm việc với C#/.NET ở tầng xử lý, Angular và React ở tầng giao diện.",
       },
@@ -108,6 +111,7 @@ export const vi: Dictionary = {
         title: "Trợ lý nghiên cứu · IAS Lab, ĐH Bách khoa TP.HCM",
         date: "01/2022 – 09/2022",
         icon: "mdi:brain",
+        logo: "/logos/iaslab.png",
         description:
           "Nghiên cứu mô hình mạng nơ-ron tích chập cho bài toán nhận diện cảm xúc khuôn mặt tại Trường Đại học Bách khoa – ĐHQG-HCM. Tiền xử lý và chuẩn hoá tập dữ liệu FER2013, đánh giá các framework và kỹ thuật học sâu nhằm cải thiện độ chính xác của mô hình. Đồng tác giả một bài báo khoa học có bình duyệt, do Springer xuất bản năm 2023.",
         linkLabel: "Bài báo đã xuất bản (Springer, 2023)",
@@ -116,6 +120,7 @@ export const vi: Dictionary = {
         title: "Chuyên viên tư vấn · 1Office",
         date: "03/2021 – 01/2022",
         icon: "mdi:handshake-outline",
+        logo: "/logos/1office.png",
         description:
           "Tư vấn phần mềm quản trị doanh nghiệp của 1Office. Làm việc trực tiếp với khách hàng về các vấn đề vận hành giúp tôi hiểu rõ yêu cầu phần mềm hình thành từ đâu — góc nhìn tôi tiếp tục vận dụng trong công việc kỹ thuật.",
       },

@@ -10,6 +10,8 @@ export interface TimelineEntry {
   title: string;
   date: string;
   icon: string;
+  /** Organisation logo under /public (e.g. "/logos/hcmut.png"); shown as the timeline marker. */
+  logo?: string;
   description: string;
   /** Renders a link under the entry; the URL itself lives in SITE. */
   linkLabel?: string;
