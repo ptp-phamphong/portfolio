@@ -81,11 +81,21 @@ export const SITE = {
   /**
    * Microsoft certifications. Credential and exam names are official proper
    * nouns, so they stay in English in every locale. `verifyUrl` is a public
-   * Microsoft Learn transcript share link; the PL exams and AB-620 were taken
-   * on different Learn accounts, hence two different transcripts. Badges are
-   * Microsoft's official level badges (associate / expert).
+   * Microsoft Learn transcript share link — every credential is on the one
+   * personal Learn account (the work account was linked into it 11/2026).
+   * Badges are Microsoft's official level badges (associate / expert).
+   * Order: experts first, then associates, newest first within each level.
    */
   certifications: [
+    {
+      name: "Agentic AI Business Solutions Architect Expert",
+      exam: "AB-100",
+      examTitle: "Agentic AI Business Solutions Architect",
+      badge: "/certifications/expert.svg",
+      earned: "11/2026",
+      verifyUrl:
+        "https://learn.microsoft.com/en-us/users/phongphmthanh-8887/transcript/v0y96aynqk3jz4o",
+    },
     {
       name: "Power Platform Solution Architect Expert",
       exam: "PL-600",
@@ -103,7 +113,7 @@ export const SITE = {
       badge: "/certifications/associate.svg",
       earned: "11/2026",
       verifyUrl:
-        "https://learn.microsoft.com/en-us/users/phongphamthanh-2030/transcript/vpjz3s1gwz2rmzj",
+        "https://learn.microsoft.com/en-us/users/phongphmthanh-8887/transcript/v0y96aynqk3jz4o",
     },
     {
       name: "Power Platform Functional Consultant Associate",

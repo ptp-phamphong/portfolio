@@ -18,7 +18,8 @@ export const Certifications = ({ title, labels }: CertificationsProps) => (
     <SectionHeader icon="mdi:certificate-outline" title={title} />
     <p className="mb-6 text-sm text-muted-foreground">{labels.description}</p>
 
-    <div className="grid gap-4 md:grid-cols-3">
+    {/* 2x2: experts on the top row, associates below. */}
+    <div className="grid gap-4 md:grid-cols-2">
       {SITE.certifications.map((cert, index) => (
         <motion.div
           key={cert.exam}

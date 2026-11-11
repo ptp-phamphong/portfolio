@@ -76,7 +76,7 @@ export const en: Dictionary = {
     },
     certifications: {
       description:
-        "Microsoft credentials covering Power Platform solution design, business requirements, and AI agents built in Copilot Studio.",
+        "Microsoft credentials covering Power Platform solution design, business requirements, AI agents built in Copilot Studio, and agentic AI solution architecture.",
       issuer: "Microsoft",
       earned: "Earned",
       verify: "Verify credential",

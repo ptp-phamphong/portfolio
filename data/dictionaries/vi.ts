@@ -75,7 +75,7 @@ export const vi: Dictionary = {
     },
     certifications: {
       description:
-        "Các chứng chỉ Microsoft về thiết kế giải pháp Power Platform, phân tích yêu cầu nghiệp vụ và xây dựng AI agent trên Copilot Studio.",
+        "Các chứng chỉ Microsoft về thiết kế giải pháp Power Platform, phân tích yêu cầu nghiệp vụ, xây dựng AI agent trên Copilot Studio và kiến trúc giải pháp agentic AI.",
       issuer: "Microsoft",
       earned: "Đạt được",
       verify: "Xác minh chứng chỉ",
