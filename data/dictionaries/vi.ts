@@ -15,47 +15,46 @@ export const vi: Dictionary = {
     hero: {
       greeting: "Xin chào, tôi là",
       title: "Lập trình viên Full-stack",
-      headline: "Full-stack Developer, tôi biến ý tưởng trở thành thực tế",
+      headline: "Tôi xây dựng ứng dụng web từ ý tưởng đến thực tế.",
       subtitle:
-        "Lập trình viên full-stack với nền tảng Khoa học Máy tính và Hệ thống Thông tin Quản lý. Tôi theo sát một tính năng từ buổi trao đổi yêu cầu đầu tiên cho đến khi sản phẩm vận hành thực tế.",
+        "Tôi có nền tảng ở cả Khoa học Máy tính lẫn Hệ thống Thông tin Quản lý. Với mỗi tính năng, tôi theo từ buổi họp yêu cầu đầu tiên đến khi đưa vào sử dụng thật.",
       primaryAction: "Liên hệ với tôi",
       secondaryAction: "Về tôi",
     },
     focus: {
       sectionTitle: "Tôi làm gì",
-      sectionDescription:
-        "Cách tôi tiếp cận công việc, không chỉ là một danh sách công nghệ.",
+      sectionDescription: "Cách tôi làm việc trong một dự án phần mềm.",
       items: [
         {
-          title: "Phát triển Full-stack",
+          title: "Phát triển full-stack",
           icon: "lucide:layers",
           description:
-            "Angular và React ở tầng giao diện, C# và .NET ở tầng xử lý, SQL Server ở tầng dữ liệu. Tôi phát triển một tính năng xuyên suốt từ thiết kế đến triển khai, thay vì bàn giao giữa chừng.",
+            "Angular và React ở tầng giao diện, C# và .NET ở tầng xử lý, SQL Server ở tầng dữ liệu. Tôi làm mỗi tính năng qua đủ các tầng này, từ thiết kế đến phát hành.",
         },
         {
-          title: "Phân tích yêu cầu & tư duy sản phẩm",
+          title: "Phân tích yêu cầu và tư duy sản phẩm",
           icon: "lucide:clipboard-list",
           description:
-            "Nền tảng Hệ thống Thông tin Quản lý giúp tôi phối hợp hiệu quả với các bên liên quan để làm rõ yêu cầu — xác định vì sao cần xây dựng, trước khi quyết định xây dựng thế nào.",
+            "Nền tảng Hệ thống Thông tin Quản lý giúp tôi làm việc với các bên liên quan để chốt yêu cầu. Tôi muốn hiểu vì sao cần hệ thống trước khi quyết định xây nó thế nào.",
         },
         {
           title: "Lập trình cùng AI",
           icon: "lucide:sparkles",
           description:
-            "Tôi sử dụng Claude, Codex và GitHub Copilot trong công việc hằng ngày, đồng thời liên tục đánh giá những trường hợp chúng thực sự mang lại hiệu quả và những trường hợp không.",
+            "Tôi dùng Claude, Codex và GitHub Copilot mỗi ngày. Ở công ty, tôi xây dựng skill và agent riêng cho Copilot để tự động hóa các việc lặp lại. Tôi cũng có chứng chỉ Microsoft về thiết kế AI agent.",
         },
         {
           title: "Chủ động giải quyết vấn đề",
           icon: "lucide:compass",
           description:
-            "Tôi học nhanh và chủ động nghiên cứu độc lập những vấn đề chưa quen thuộc, theo đuổi đến khi có được giải pháp đáng tin cậy.",
+            "Tôi nắm bắt công cụ mới nhanh và tự tìm hiểu vấn đề đến khi có cách xử lý mà tôi tin được. LifeHub là một ví dụ: tôi tự dựng và vận hành toàn bộ hệ thống trên một chiếc Raspberry Pi, gồm HTTPS, sao lưu dữ liệu và một bản demo chạy trong môi trường cách ly.",
         },
       ],
     },
     cta: {
       title: "Cùng hợp tác",
       description:
-        "Tôi luôn sẵn sàng trao đổi về các dự án mới, bài toán kỹ thuật hoặc cơ hội hợp tác.",
+        "Nếu bạn đang có một dự án hoặc một vấn đề kỹ thuật, tôi rất sẵn lòng cùng trao đổi.",
       buttonLabel: "Gửi email cho tôi",
     },
   },
@@ -63,9 +62,9 @@ export const vi: Dictionary = {
   about: {
     profileTitle: "Lập trình viên Full-stack",
     description: [
-      "Tôi là lập trình viên full-stack, xây dựng và bảo trì các ứng dụng web. Tôi làm việc trên toàn bộ stack — Angular và React ở tầng giao diện, C# và .NET ở tầng xử lý, SQL Server và các cơ sở dữ liệu quan hệ khác ở tầng dữ liệu.",
-      "Nền tảng của tôi trải trên cả Khoa học Máy tính lẫn Hệ thống Thông tin Quản lý. Sự kết hợp đó định hình cách tôi tiếp cận phần mềm: tôi quan tâm không chỉ tới việc hệ thống được xây dựng như thế nào, mà còn tới việc nó cần giải quyết vấn đề gì và vì sao. Tôi phối hợp chặt chẽ với các bên liên quan trong giai đoạn xác định yêu cầu, và đặt ra những câu hỏi cần thiết trước khi viết dòng code đầu tiên.",
-      "Tôi học nhanh và chủ động nghiên cứu độc lập những vấn đề chưa quen thuộc. Phần lớn sự quan tâm gần đây của tôi dành cho AI — tôi sử dụng Claude, Codex và GitHub Copilot trong công việc hằng ngày, đồng thời liên tục đánh giá hiệu quả thực tế mà chúng mang lại cho công việc kỹ thuật.",
+      "Tôi đang là lập trình viên full-stack ở Precio Fishbone, làm việc trên một nền tảng quản lý NGO phục vụ các tổ chức quốc tế ở nhiều nước châu Âu. Bộ công nghệ chính của tôi gồm Angular và React ở tầng giao diện, C# và .NET ở tầng xử lý, cùng SQL Server và các cơ sở dữ liệu quan hệ khác ở tầng dữ liệu.",
+      "Nền tảng của tôi gồm cả Khoa học Máy tính lẫn Hệ thống Thông tin Quản lý. Vì vậy, ngoài chuyện hệ thống được xây thế nào, tôi còn quan tâm nó cần làm gì và vì sao. Tôi làm việc cùng các bên liên quan ngay từ lúc còn đang xác định yêu cầu, và nêu những điểm chưa rõ từ sớm, khi thay đổi vẫn còn ít tốn công.",
+      "Tôi thích tự mày mò những bài toán mới. Gần đây, phần lớn thời gian đó tôi dành cho AI. Tôi dùng Claude, Codex và GitHub Copilot trong công việc hằng ngày, và để ý xem chúng giúp tiết kiệm thời gian ở đâu và như thế nào. Năm 2026, tôi cũng đạt các chứng chỉ Microsoft về thiết kế AI agent.",
     ],
     sections: {
       education: "Học vấn",
@@ -77,7 +76,7 @@ export const vi: Dictionary = {
       description:
         "Các chứng chỉ Microsoft về thiết kế giải pháp Power Platform, phân tích yêu cầu nghiệp vụ, xây dựng AI agent trên Copilot Studio và kiến trúc giải pháp agentic AI.",
       issuer: "Microsoft",
-      earned: "Đạt được",
+      earned: "Ngày cấp",
       verify: "Xác minh chứng chỉ",
     },
     education: [
@@ -87,7 +86,7 @@ export const vi: Dictionary = {
         icon: "mdi:school",
         logo: "/logos/hcmut.png",
         description:
-          "Ngành Khoa học Máy tính. Nền tảng tôi vận dụng mỗi ngày: cấu trúc dữ liệu, giải thuật, công nghệ phần mềm và cơ sở dữ liệu.",
+          "Ngành Khoa học Máy tính. Những môn tôi được tiếp cận: cấu trúc dữ liệu, giải thuật, công nghệ phần mềm và cơ sở dữ liệu.",
       },
       {
         title: "Trường Đại học Kinh tế TP.HCM (UEH)",
@@ -95,7 +94,7 @@ export const vi: Dictionary = {
         icon: "mdi:school-outline",
         logo: "/logos/ueh.png",
         description:
-          "Chương trình thạc sĩ, tiếp nối mảng Hệ thống Thông tin Quản lý — nơi bài toán nghiệp vụ và phần mềm gặp nhau.",
+          "Chương trình thạc sĩ Hệ thống Thông tin Quản lý, ngành học về cách biến yêu cầu nghiệp vụ thành phần mềm chạy được.",
       },
     ],
     experience: [
@@ -105,7 +104,7 @@ export const vi: Dictionary = {
         icon: "mdi:briefcase",
         logo: "/logos/precio-fishbone.svg",
         description:
-          "Xây dựng và bảo trì các ứng dụng web trên toàn bộ stack, từ thiết kế tính năng đến triển khai và phát hành. Làm việc với C#/.NET ở tầng xử lý, Angular và React ở tầng giao diện.",
+          "Làm việc trên nền tảng quản lý NGO phục vụ các tổ chức quốc tế ở nhiều nước châu Âu. Phát triển các module lõi bằng Angular, .NET và SharePoint, và thường xuyên nâng cấp lên phiên bản Angular và .NET mới nhất. Tùy biến sản phẩm theo yêu cầu riêng của từng khách hàng, xử lý sự cố trên môi trường của khách hàng, và vận hành CI/CD cùng các đợt phát hành trên Azure DevOps. Ngoài ra, xây dựng skill và agent riêng cho GitHub Copilot để tự động hóa các việc lặp lại trong quá trình phát triển.",
       },
       {
         title: "Trợ lý nghiên cứu · IAS Lab, ĐH Bách khoa TP.HCM",
@@ -113,7 +112,7 @@ export const vi: Dictionary = {
         icon: "mdi:brain",
         logo: "/logos/iaslab.png",
         description:
-          "Nghiên cứu mô hình mạng nơ-ron tích chập cho bài toán nhận diện cảm xúc khuôn mặt tại Trường Đại học Bách khoa – ĐHQG-HCM. Tiền xử lý và chuẩn hoá tập dữ liệu FER2013, đánh giá các framework và kỹ thuật học sâu nhằm cải thiện độ chính xác của mô hình. Đồng tác giả một bài báo khoa học có bình duyệt, do Springer xuất bản năm 2023.",
+          "Nghiên cứu mô hình mạng nơ-ron tích chập (CNN) cho bài toán nhận diện cảm xúc khuôn mặt tại Trường Đại học Bách khoa – ĐHQG-HCM. Tiền xử lý và chuẩn hoá tập dữ liệu FER2013, thử nghiệm các framework và kỹ thuật học sâu để cải thiện độ chính xác của mô hình. Đồng tác giả một bài báo có bình duyệt, do Springer xuất bản năm 2023.",
         linkLabel: "Bài báo đã xuất bản (Springer, 2023)",
       },
       {
@@ -122,7 +121,7 @@ export const vi: Dictionary = {
         icon: "mdi:handshake-outline",
         logo: "/logos/1office.png",
         description:
-          "Tư vấn phần mềm quản trị doanh nghiệp của 1Office. Làm việc trực tiếp với khách hàng về các vấn đề vận hành giúp tôi hiểu rõ yêu cầu phần mềm hình thành từ đâu — góc nhìn tôi tiếp tục vận dụng trong công việc kỹ thuật.",
+          "Tư vấn phần mềm quản trị doanh nghiệp của 1Office. Nghe khách hàng kể về những vướng mắc vận hành hằng ngày giúp tôi hiểu yêu cầu phần mềm đến từ đâu.",
       },
     ],
     technologies: [
@@ -130,25 +129,24 @@ export const vi: Dictionary = {
         key: "frontend",
         label: "Front-end",
         description:
-          "Giao diện người dùng làm việc mỗi ngày: kiến trúc theo component, kiểu dữ liệu chặt chẽ và hiển thị tốt trên mọi thiết bị.",
+          "Giao diện dựng từ các component dùng lại được, có kiểu dữ liệu rõ ràng, hiển thị tốt trên cả điện thoại lẫn máy tính.",
       },
       {
         key: "backend",
         label: "Back-end",
-        description:
-          "Nghiệp vụ, API và các service — phần hệ thống vận hành phía sau giao diện.",
+        description: "API, service và phần xử lý nghiệp vụ phía sau giao diện.",
       },
       {
         key: "databases",
         label: "Cơ sở dữ liệu",
         description:
-          "Thiết kế và truy vấn các cơ sở dữ liệu quan hệ mà những ứng dụng này vận hành trên đó.",
+          "Thiết kế và truy vấn cơ sở dữ liệu quan hệ cho các ứng dụng này.",
       },
       {
         key: "ai",
         label: "Công cụ AI",
         description:
-          "Một phần trong quy trình phát triển hằng ngày của tôi, đồng thời là lĩnh vực tôi tiếp tục tự nghiên cứu.",
+          "Công cụ tôi dùng hằng ngày trong công việc, và là lĩnh vực tôi vẫn tự học thêm ngoài giờ.",
       },
     ],
   },
@@ -156,7 +154,7 @@ export const vi: Dictionary = {
   projects: {
     heading: "Những sản phẩm tôi đã làm",
     description:
-      "Một vài dự án tôi đã tự tay xây dựng từ một repo trống cho đến khi vận hành thực tế trên internet. Bạn có thể mở ra và trải nghiệm thử.",
+      "Một vài dự án tôi tự làm từ lúc còn là repo trống đến khi thành trang web chạy thật. Bạn cứ mở ra xem thử.",
     labels: {
       demoAccount: "Tài khoản demo",
       username: "Tên đăng nhập",
@@ -170,20 +168,20 @@ export const vi: Dictionary = {
         key: "lifehub",
         title: "LifeHub",
         description:
-          "Ứng dụng quản lý cuộc sống cá nhân tôi tự phát triển trọn vẹn và vận hành trên Raspberry Pi với tên miền riêng — một SPA Angular và ứng dụng di động chạy trên API ASP.NET Core cùng MariaDB. Ứng dụng gồm quản lý chi tiêu, ghi chú và các công cụ hằng ngày, có đầy đủ xác thực đăng nhập. Bản demo bên dưới là môi trường thử nghiệm tự làm mới, nên bạn cứ đăng nhập và khám phá thoải mái.",
+          "Ứng dụng cá nhân để theo dõi chi tiêu, thu nhập và lịch học. Tôi tự làm web app bằng Angular, app di động bằng Expo và API bằng ASP.NET Core với MariaDB, rồi chạy tất cả trên một chiếc Raspberry Pi với tên miền riêng. Bản demo bên dưới chạy trong môi trường thử nghiệm tự khôi phục dữ liệu, nên bạn cứ đăng nhập và bấm thử.",
       },
       {
         key: "portfolio",
         title: "Portfolio",
         description:
-          "Chính là trang web này. Một portfolio song ngữ (Anh / Việt) xây bằng Next.js dưới dạng xuất tĩnh hoàn toàn, triển khai cùng LifeHub trên cùng một Raspberry Pi. Có giao diện sáng/tối, hiệu ứng chuyển động và tầng nội dung tách bạch, dễ bảo trì.",
+          "Chính là trang bạn đang xem. Portfolio bằng tiếng Anh và tiếng Việt, làm bằng Next.js, xuất thành file tĩnh và chạy trên cùng chiếc Raspberry Pi với LifeHub. Trang có giao diện sáng và tối. Mỗi ngôn ngữ nằm trong một file riêng có khai báo kiểu, nên TypeScript sẽ báo lỗi nếu còn đoạn nào chưa dịch.",
       },
     ],
   },
 
   contact: {
     heading:
-      "Tôi luôn sẵn sàng trao đổi về các dự án mới, bài toán kỹ thuật hoặc cơ hội hợp tác.",
+      "Tôi sẵn lòng trao đổi về dự án, cơ hội hợp tác hoặc các câu hỏi kỹ thuật. Bạn có thể liên hệ qua kênh nào thuận tiện nhất.",
     labels: {
       email: "Email",
       phone: "Điện thoại",
@@ -199,7 +197,7 @@ export const vi: Dictionary = {
     connectTitle: "Liên hệ với tôi",
     contactTitle: "Thông tin liên hệ",
     description:
-      "Lập trình viên full-stack tại TP. Hồ Chí Minh, xây dựng ứng dụng web từ đầu đến cuối.",
+      "Lập trình viên full-stack tại TP. Hồ Chí Minh. Tôi xây dựng ứng dụng web từ khâu yêu cầu đến khi phát hành.",
   },
 
   morphingTexts: {

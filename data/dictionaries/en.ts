@@ -18,45 +18,44 @@ export const en: Dictionary = {
       title: "Full-stack Developer",
       headline: "I build web applications end to end.",
       subtitle:
-        "Full-stack developer with a background in both Computer Science and Management Information Systems. I take features from the first requirements discussion through to production.",
+        "I have a background in both Computer Science and Management Information Systems. I take features from the first requirements meeting all the way to production.",
       primaryAction: "Get in touch",
       secondaryAction: "About me",
     },
     focus: {
-      sectionTitle: "What I Do",
-      sectionDescription:
-        "How I approach engineering work, beyond a list of frameworks.",
+      sectionTitle: "What I do",
+      sectionDescription: "How I approach engineering work.",
       items: [
         {
-          title: "Full-stack Development",
+          title: "Full-stack development",
           icon: "lucide:layers",
           description:
-            "Angular and React on the front end, C# and .NET on the back end, SQL Server underneath. I take a feature from design through implementation and release, rather than handing it off midway.",
+            "Angular and React on the front end, C# and .NET on the back end, SQL Server for the data. I build each feature across all of these layers, from design to release.",
         },
         {
-          title: "Requirements & Product Thinking",
+          title: "Requirements and product thinking",
           icon: "lucide:clipboard-list",
           description:
-            "A background in Management Information Systems means I work comfortably with stakeholders to define requirements — establishing why a system is needed before deciding how to build it.",
+            "My Management Information Systems background helps me work with stakeholders to pin down requirements. I want to know why a system is needed before I decide how to build it.",
         },
         {
-          title: "AI-Assisted Engineering",
+          title: "AI-assisted engineering",
           icon: "lucide:sparkles",
           description:
-            "I use Claude, Codex and GitHub Copilot in my daily development work, and continually assess where they add real value and where they do not.",
+            "I use Claude, Codex and GitHub Copilot every day. At work I build custom Copilot skills and agents that take over repetitive development tasks, and I hold Microsoft certifications in designing AI agents.",
         },
         {
-          title: "Independent Problem Solving",
+          title: "Independent problem solving",
           icon: "lucide:compass",
           description:
-            "I learn quickly and research unfamiliar problems independently, working through them until I have a solution I can rely on.",
+            "I pick up unfamiliar tools quickly and research problems on my own until I have a fix I trust. LifeHub is one example: I set up and run its whole stack on a Raspberry Pi myself, including HTTPS, backups and a sandboxed demo.",
         },
       ],
     },
     cta: {
       title: "Let's work together",
       description:
-        "I'm always glad to discuss new projects, technical challenges, or opportunities to collaborate.",
+        "If you have a project or a technical problem in mind, I'd be glad to talk it through.",
       buttonLabel: "Email me",
     },
   },
@@ -64,9 +63,9 @@ export const en: Dictionary = {
   about: {
     profileTitle: "Full-stack Developer",
     description: [
-      "I'm a full-stack developer building and maintaining web applications. I work across the entire stack — Angular and React on the front end, C# and .NET on the back end, with SQL Server and other relational databases underneath.",
-      "My background spans both Computer Science and Management Information Systems. That combination shapes how I approach software: I'm concerned not only with how a system is built, but with what it should do and why. I work closely with stakeholders while requirements are being defined, and I raise the difficult questions before the first line of code is written.",
-      "I learn quickly and prefer to investigate unfamiliar problems thoroughly and independently. Much of that interest currently goes into AI — I use Claude, Codex and GitHub Copilot in my daily work, and continually evaluate where they genuinely improve engineering outcomes.",
+      "I'm a full-stack developer at Precio Fishbone, working on an NGO management platform used by international organizations across Europe. My main stack is Angular and React on the front end, C# and .NET on the back end, and SQL Server and other relational databases for the data.",
+      "My background covers both Computer Science and Management Information Systems, so I care about what a system should do and why, as well as how it's built. I work with stakeholders while requirements are still being defined, and I raise open questions early, while they're still cheap to answer.",
+      "I like digging into unfamiliar problems on my own. Lately most of that time goes into AI. I use Claude, Codex and GitHub Copilot in my daily work and pay attention to where and how they save time. In 2026 I also earned Microsoft certifications in AI agent design.",
     ],
     sections: {
       education: "Education",
@@ -76,7 +75,7 @@ export const en: Dictionary = {
     },
     certifications: {
       description:
-        "Microsoft credentials covering Power Platform solution design, business requirements, AI agents built in Copilot Studio, and agentic AI solution architecture.",
+        "Microsoft certifications in Power Platform solution design, business requirements, building AI agents in Copilot Studio, and agentic AI solution architecture.",
       issuer: "Microsoft",
       earned: "Earned",
       verify: "Verify credential",
@@ -88,7 +87,7 @@ export const en: Dictionary = {
         icon: "mdi:school",
         logo: "/logos/hcmut.png",
         description:
-          "Computer Science. The foundations I apply daily: data structures, algorithms, software engineering and databases.",
+          "Computer Science. Some courses I learn: data structures, algorithms, software engineering and databases.",
       },
       {
         title: "University of Economics Ho Chi Minh City (UEH)",
@@ -96,7 +95,7 @@ export const en: Dictionary = {
         icon: "mdi:school-outline",
         logo: "/logos/ueh.png",
         description:
-          "Master's studies, continuing the Management Information Systems side of my background — where business requirements meet the software built to satisfy them.",
+          "Master's studies in Management Information Systems, which covers how business requirements become working software.",
       },
     ],
     experience: [
@@ -106,7 +105,7 @@ export const en: Dictionary = {
         icon: "mdi:briefcase",
         logo: "/logos/precio-fishbone.svg",
         description:
-          "Building and maintaining web applications across the full stack, from feature design through implementation and release. Working in C#/.NET on the back end and Angular and React on the front end.",
+          "Work on an NGO management platform used by international organizations across Europe. Develop its core modules in Angular, .NET and SharePoint, and keep the stack on current Angular and .NET versions through regular upgrades. Build client-specific customizations, fix issues in client environments, and run CI/CD pipelines and releases in Azure DevOps. Also build GitHub Copilot skills and agents that automate repetitive development tasks.",
       },
       {
         title: "Research Assistant · IAS Lab, HCMUT",
@@ -114,7 +113,7 @@ export const en: Dictionary = {
         icon: "mdi:brain",
         logo: "/logos/iaslab.png",
         description:
-          "Researched convolutional neural network models for facial emotion recognition at Ho Chi Minh City University of Technology. Preprocessed and normalised the FER2013 dataset, and evaluated deep learning frameworks and techniques to improve model accuracy. Co-authored a peer-reviewed paper published by Springer in 2023.",
+          "Researched convolutional neural network models for facial emotion recognition at Ho Chi Minh City University of Technology. Preprocessed and normalized the FER2013 dataset, and tested deep learning frameworks and techniques to improve model accuracy. Co-authored a peer-reviewed paper, published by Springer in 2023.",
         linkLabel: "Published paper (Springer, 2023)",
       },
       {
@@ -123,7 +122,7 @@ export const en: Dictionary = {
         icon: "mdi:handshake-outline",
         logo: "/logos/1office.png",
         description:
-          "Advised businesses on 1Office's management software. Working directly with customers on their operational challenges gave me a clear view of where software requirements originate — a perspective I continue to apply in engineering.",
+          "Advised businesses on 1Office's management software. Listening to customers describe their day-to-day operational problems taught me where software requirements come from.",
       },
     ],
     /** `key` maps into SITE.tech for the tool list + icons. */
@@ -132,25 +131,24 @@ export const en: Dictionary = {
         key: "frontend",
         label: "Frontend",
         description:
-          "The interfaces users work with every day: component-driven, strongly typed, and responsive across devices.",
+          "Interfaces built from typed, reusable components that work on both phones and desktops.",
       },
       {
         key: "backend",
         label: "Backend",
-        description:
-          "Business logic, APIs and services — the systems running behind the interface.",
+        description: "APIs, services and the business logic behind the interface.",
       },
       {
         key: "databases",
         label: "Databases",
         description:
-          "Designing and querying the relational databases these applications depend on.",
+          "Designing and querying the relational databases behind these applications.",
       },
       {
         key: "ai",
         label: "AI Tools",
         description:
-          "Part of my daily engineering workflow, and a field I continue to study on my own time.",
+          "Tools I use every day at work, and a field I keep studying on my own time.",
       },
     ],
   },
@@ -158,7 +156,7 @@ export const en: Dictionary = {
   projects: {
     heading: "Things I've built",
     description:
-      "A few projects I've taken from an empty repository to something running live on the internet. Feel free to open them and have a look.",
+      "A few projects I've built from an empty repository to a live website. Feel free to open them and look around.",
     labels: {
       demoAccount: "Demo account",
       username: "Username",
@@ -172,20 +170,20 @@ export const en: Dictionary = {
         key: "lifehub",
         title: "LifeHub",
         description:
-          "A personal life-management app I built end to end and run on a Raspberry Pi behind my own domain — an Angular SPA and a mobile app on top of an ASP.NET Core API and MariaDB. It handles expense tracking, notes and daily tools, with full authentication. The demo below is a self-resetting sandbox, so log in and explore freely.",
+          "A personal app for tracking expenses, income and class schedules. I built the Angular web app, the Expo mobile app and the ASP.NET Core API with MariaDB, and I host all of it on a Raspberry Pi under my own domain. The demo below runs in a sandbox that resets itself, so feel free to log in and click around.",
       },
       {
         key: "portfolio",
         title: "Portfolio",
         description:
-          "This very site. A bilingual (English / Vietnamese) portfolio built with Next.js as a fully static export, deployed alongside LifeHub on the same Raspberry Pi. Light and dark themes, animated sections, and a clean data-driven content layer.",
+          "The site you're reading. A Next.js portfolio in English and Vietnamese, exported as static files and hosted on the same Raspberry Pi as LifeHub. It has light and dark themes, and each language lives in its own typed file, so TypeScript catches any text left untranslated.",
       },
     ],
   },
 
   contact: {
     heading:
-      "I'm always glad to discuss new projects, technical challenges, or potential collaboration.",
+      "I'm happy to talk about projects, collaborations or technical questions. Use whichever channel suits you.",
     labels: {
       email: "Email",
       phone: "Phone",
@@ -201,7 +199,7 @@ export const en: Dictionary = {
     connectTitle: "Get in touch",
     contactTitle: "Contact",
     description:
-      "Full-stack developer in Ho Chi Minh City, building web applications end to end.",
+      "Full-stack developer in Ho Chi Minh City. I build web applications from requirements to release.",
   },
 
   morphingTexts: {
