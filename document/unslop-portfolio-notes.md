@@ -109,8 +109,8 @@ Làm bằng skill `unslop`, chế độ đầy đủ, ngày 13/11/2026, chia hai
 - [ ] Trường `icon` trong các mục học vấn và kinh nghiệm (`mdi:school`…) không còn được dùng ở đâu. Có thể xóa khỏi `TimelineEntry` và hai từ điển.
 
 ### Nội dung
-- [ ] Chụp lại `public/projects/lifehub.png` sau khi deploy bản sửa trang Phân tích của LifeHub. Ảnh hiện tại là giao diện cũ, còn nhãn in hoa. Ảnh này hiện ở cả hero trang chủ lẫn trang Dự án.
-- [ ] Nếu sau này đổi hero, nhớ chụp lại `public/projects/portfolio.jpg`.
+- [ ] Chụp lại `public/projects/lifehub-light.png` và `lifehub-dark.png` sau khi deploy bản sửa trang Phân tích của LifeHub. Ảnh chụp ngày 14/11/2026 từ demo vẫn là giao diện cũ, còn nhãn in hoa. Ảnh này hiện ở cả hero trang chủ lẫn trang Dự án.
+- [ ] Nếu sau này đổi hero, nhớ chụp lại `public/projects/portfolio-light.jpg` và `portfolio-dark.jpg`.
 
 ### Deploy
 - [ ] Chưa deploy. Chạy `.\deploy.ps1 portfolio` từ `D:\Rasberry_PI` khi đã duyệt.

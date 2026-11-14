@@ -1,9 +1,9 @@
 "use client";
 
-import Image from "next/image";
 import { Button, Card, CardBody, Chip, Link, Snippet } from "@heroui/react";
 import { Icon } from "@iconify/react";
 
+import { ThemedImage } from "@/components/themed-image";
 import { SITE } from "@/data";
 import { Dictionary, ProjectContent } from "@/data/types";
 
@@ -27,12 +27,11 @@ const hasLive = (
 export const ProjectCard = ({ content, facts, labels }: ProjectCardProps) => (
   <Card className="h-full overflow-hidden border border-divider" shadow="none">
     {/* Real screenshot of the running app, cropped to a banner. object-top
-        keeps the app's header/nav in frame. A hairline ends it, not a fade:
-        fading to the card colour turns into a grey smear whenever image and
-        card differ in brightness (light app shot on the dark theme, or the
-        dark portfolio shot on the light one). */}
+        keeps the app's header/nav in frame. Light and dark shots swap with the
+        theme. A hairline ends the banner, not a fade: a fade to the card
+        colour smears grey wherever image and card differ in brightness. */}
     <div className="relative aspect-[16/9] w-full overflow-hidden border-b border-divider">
-      <Image
+      <ThemedImage
         fill
         alt={content.title}
         className="object-cover object-top"

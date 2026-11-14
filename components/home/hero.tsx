@@ -6,6 +6,7 @@ import { Button, Link } from "@heroui/react";
 import { Icon } from "@iconify/react";
 
 import { useI18n } from "@/components/i18n-provider";
+import { ThemedImage } from "@/components/themed-image";
 import { SITE } from "@/data";
 
 /** The hero's one visual is a real product, not decoration: LifeHub, built and self-hosted by the owner. */
@@ -93,7 +94,7 @@ export const HeroSection = () => {
                   app.ptp-phamphong.com
                 </span>
               </div>
-              <Image
+              <ThemedImage
                 priority
                 alt={previewCaption}
                 className="h-auto w-full"
