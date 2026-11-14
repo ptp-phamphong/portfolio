@@ -1,10 +1,5 @@
 "use client";
 
-import { motion } from "framer-motion";
-import { Card, CardBody } from "@heroui/react";
-import { Icon } from "@iconify/react";
-
-import { GradientText } from "@/components/textAnimations/gradient-text";
 import { useI18n } from "@/components/i18n-provider";
 
 export const FocusSection = () => {
@@ -12,52 +7,28 @@ export const FocusSection = () => {
   const { sectionTitle, sectionDescription, items } = dict.home.focus;
 
   return (
-    <section className="py-20 bg-gradient-to-b from-background to-content2">
-      <div className="container mx-auto px-4">
-        <motion.div
-          className="text-center mb-16"
-          initial={{ opacity: 0, y: 20 }}
-          transition={{ duration: 0.8 }}
-          viewport={{ once: true }}
-          whileInView={{ opacity: 1, y: 0 }}
-        >
-          <GradientText
-            className="text-3xl md:text-4xl font-bold mb-4 gradient"
-            text={sectionTitle}
-          />
-          <p className="text-foreground-600 text-lg max-w-2xl mx-auto">
-            {sectionDescription}
-          </p>
-        </motion.div>
+    <section className="container mx-auto max-w-6xl px-6 pb-16 pt-8 md:pb-24 md:pt-12">
+      <div className="mb-12 max-w-2xl">
+        <h2 className="text-3xl font-medium tracking-[-0.01em] text-foreground md:text-4xl">
+          {sectionTitle}
+        </h2>
+        <p className="mt-4 text-lg text-foreground-600">{sectionDescription}</p>
+      </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-          {items.map((item, index) => (
-            <motion.div
-              key={item.title}
-              initial={{ opacity: 0, x: index % 2 === 0 ? -20 : 20 }}
-              transition={{ delay: index * 0.1, duration: 0.8 }}
-              viewport={{ once: true }}
-              whileInView={{ opacity: 1, x: 0 }}
-            >
-              <Card className="h-full border-none shadow-md">
-                <CardBody className="p-6">
-                  <div className="flex items-center gap-4 mb-4">
-                    <div className="p-3 rounded-full bg-primary-100">
-                      <Icon
-                        className="w-6 h-6 text-primary-500"
-                        icon={item.icon}
-                      />
-                    </div>
-                    <h3 className="text-xl font-semibold">{item.title}</h3>
-                  </div>
-                  <p className="text-foreground-600 leading-relaxed">
-                    {item.description}
-                  </p>
-                </CardBody>
-              </Card>
-            </motion.div>
-          ))}
-        </div>
+      <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
+        {items.map((item) => (
+          <div
+            key={item.title}
+            className="rounded-2xl border border-divider bg-content1 p-6"
+          >
+            <h3 className="text-lg font-medium text-foreground">
+              {item.title}
+            </h3>
+            <p className="mt-3 leading-relaxed text-foreground-600">
+              {item.description}
+            </p>
+          </div>
+        ))}
       </div>
     </section>
   );

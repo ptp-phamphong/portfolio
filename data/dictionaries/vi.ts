@@ -13,39 +13,35 @@ export const vi: Dictionary = {
 
   home: {
     hero: {
-      greeting: "Xin chào, tôi là",
-      title: "Lập trình viên Full-stack",
-      headline: "Tôi xây dựng ứng dụng web từ ý tưởng đến thực tế.",
+      title: "Lập trình viên full-stack",
+      headline: "Tôi xây dựng ứng dụng web từ ý tưởng đến thực tế",
       subtitle:
         "Tôi có nền tảng ở cả Khoa học Máy tính lẫn Hệ thống Thông tin Quản lý. Với mỗi tính năng, tôi theo từ buổi họp yêu cầu đầu tiên đến khi đưa vào sử dụng thật.",
       primaryAction: "Liên hệ với tôi",
       secondaryAction: "Về tôi",
+      previewCaption: "LifeHub, ứng dụng tôi tự làm và tự vận hành",
     },
     focus: {
       sectionTitle: "Tôi làm gì",
-      sectionDescription: "Cách tôi làm việc trong một dự án phần mềm.",
+      sectionDescription: "Cách tôi làm việc trong một dự án phần mềm",
       items: [
         {
           title: "Phát triển full-stack",
-          icon: "lucide:layers",
           description:
             "Angular và React ở tầng giao diện, C# và .NET ở tầng xử lý, SQL Server ở tầng dữ liệu. Tôi làm mỗi tính năng qua đủ các tầng này, từ thiết kế đến phát hành.",
         },
         {
           title: "Phân tích yêu cầu và tư duy sản phẩm",
-          icon: "lucide:clipboard-list",
           description:
             "Nền tảng Hệ thống Thông tin Quản lý giúp tôi làm việc với các bên liên quan để chốt yêu cầu. Tôi muốn hiểu vì sao cần hệ thống trước khi quyết định xây nó thế nào.",
         },
         {
           title: "Lập trình cùng AI",
-          icon: "lucide:sparkles",
           description:
             "Tôi dùng Claude, Codex và GitHub Copilot mỗi ngày. Ở công ty, tôi xây dựng skill và agent riêng cho Copilot để tự động hóa các việc lặp lại. Tôi cũng có chứng chỉ Microsoft về thiết kế AI agent.",
         },
         {
           title: "Chủ động giải quyết vấn đề",
-          icon: "lucide:compass",
           description:
             "Tôi nắm bắt công cụ mới nhanh và tự tìm hiểu vấn đề đến khi có cách xử lý mà tôi tin được. LifeHub là một ví dụ: tôi tự dựng và vận hành toàn bộ hệ thống trên một chiếc Raspberry Pi, gồm HTTPS, sao lưu dữ liệu và một bản demo chạy trong môi trường cách ly.",
         },
@@ -54,13 +50,13 @@ export const vi: Dictionary = {
     cta: {
       title: "Cùng hợp tác",
       description:
-        "Nếu bạn đang có một dự án hoặc một vấn đề kỹ thuật, tôi rất sẵn lòng cùng trao đổi.",
+        "Nếu bạn đang có một dự án hoặc một vấn đề kỹ thuật, tôi rất sẵn lòng cùng trao đổi",
       buttonLabel: "Gửi email cho tôi",
     },
   },
 
   about: {
-    profileTitle: "Lập trình viên Full-stack",
+    profileTitle: "Lập trình viên full-stack",
     description: [
       "Tôi đang là lập trình viên full-stack ở Precio Fishbone, làm việc trên một nền tảng quản lý NGO phục vụ các tổ chức quốc tế ở nhiều nước châu Âu. Bộ công nghệ chính của tôi gồm Angular và React ở tầng giao diện, C# và .NET ở tầng xử lý, cùng SQL Server và các cơ sở dữ liệu quan hệ khác ở tầng dữ liệu.",
       "Nền tảng của tôi gồm cả Khoa học Máy tính lẫn Hệ thống Thông tin Quản lý. Vì vậy, ngoài chuyện hệ thống được xây thế nào, tôi còn quan tâm nó cần làm gì và vì sao. Tôi làm việc cùng các bên liên quan ngay từ lúc còn đang xác định yêu cầu, và nêu những điểm chưa rõ từ sớm, khi thay đổi vẫn còn ít tốn công.",
@@ -74,7 +70,7 @@ export const vi: Dictionary = {
     },
     certifications: {
       description:
-        "Các chứng chỉ Microsoft về thiết kế giải pháp Power Platform, phân tích yêu cầu nghiệp vụ, xây dựng AI agent trên Copilot Studio và kiến trúc giải pháp agentic AI.",
+        "Các chứng chỉ Microsoft về thiết kế giải pháp Power Platform, phân tích yêu cầu nghiệp vụ, xây dựng AI agent trên Copilot Studio và kiến trúc giải pháp agentic AI",
       issuer: "Microsoft",
       earned: "Ngày cấp",
       verify: "Xác minh chứng chỉ",
@@ -99,7 +95,7 @@ export const vi: Dictionary = {
     ],
     experience: [
       {
-        title: "Lập trình viên Full-stack · Precio Fishbone",
+        title: "Lập trình viên full-stack · Precio Fishbone",
         date: "06/2023 – Nay",
         icon: "mdi:briefcase",
         logo: "/logos/precio-fishbone.svg",
@@ -112,7 +108,7 @@ export const vi: Dictionary = {
         icon: "mdi:brain",
         logo: "/logos/iaslab.png",
         description:
-          "Nghiên cứu mô hình mạng nơ-ron tích chập (CNN) cho bài toán nhận diện cảm xúc khuôn mặt tại Trường Đại học Bách khoa – ĐHQG-HCM. Tiền xử lý và chuẩn hoá tập dữ liệu FER2013, thử nghiệm các framework và kỹ thuật học sâu để cải thiện độ chính xác của mô hình. Đồng tác giả một bài báo có bình duyệt, do Springer xuất bản năm 2023.",
+          "Nghiên cứu mô hình mạng nơ-ron tích chập (CNN) cho bài toán nhận diện cảm xúc khuôn mặt tại Trường Đại học Bách khoa – ĐHQG-HCM. Tiền xử lý và chuẩn hóa tập dữ liệu FER2013, thử nghiệm các framework và kỹ thuật học sâu để cải thiện độ chính xác của mô hình. Đồng tác giả một bài báo có bình duyệt, do Springer xuất bản năm 2023.",
         linkLabel: "Bài báo đã xuất bản (Springer, 2023)",
       },
       {
@@ -129,24 +125,24 @@ export const vi: Dictionary = {
         key: "frontend",
         label: "Front-end",
         description:
-          "Giao diện dựng từ các component dùng lại được, có kiểu dữ liệu rõ ràng, hiển thị tốt trên cả điện thoại lẫn máy tính.",
+          "Giao diện dựng từ các component dùng lại được, có kiểu dữ liệu rõ ràng, hiển thị tốt trên cả điện thoại lẫn máy tính",
       },
       {
         key: "backend",
         label: "Back-end",
-        description: "API, service và phần xử lý nghiệp vụ phía sau giao diện.",
+        description: "API, service và phần xử lý nghiệp vụ phía sau giao diện",
       },
       {
         key: "databases",
         label: "Cơ sở dữ liệu",
         description:
-          "Thiết kế và truy vấn cơ sở dữ liệu quan hệ cho các ứng dụng này.",
+          "Thiết kế và truy vấn cơ sở dữ liệu quan hệ cho các ứng dụng này",
       },
       {
         key: "ai",
         label: "Công cụ AI",
         description:
-          "Công cụ tôi dùng hằng ngày trong công việc, và là lĩnh vực tôi vẫn tự học thêm ngoài giờ.",
+          "Công cụ tôi dùng hằng ngày trong công việc, và là lĩnh vực tôi vẫn tự học thêm ngoài giờ",
       },
     ],
   },
@@ -180,7 +176,8 @@ export const vi: Dictionary = {
   },
 
   contact: {
-    heading:
+    heading: "Liên hệ với tôi",
+    description:
       "Tôi sẵn lòng trao đổi về dự án, cơ hội hợp tác hoặc các câu hỏi kỹ thuật. Bạn có thể liên hệ qua kênh nào thuận tiện nhất.",
     labels: {
       email: "Email",
@@ -198,11 +195,6 @@ export const vi: Dictionary = {
     contactTitle: "Thông tin liên hệ",
     description:
       "Lập trình viên full-stack tại TP. Hồ Chí Minh. Tôi xây dựng ứng dụng web từ khâu yêu cầu đến khi phát hành.",
-  },
-
-  morphingTexts: {
-    about: ["Tò mò", "Full-stack", "Lập trình"],
-    projects: ["Sản phẩm", "tôi đã", "làm ra"],
-    contact: ["Kết nối", "Trao đổi", "Hợp tác"],
+    selfHosted: "Tự host trên một chiếc Raspberry Pi",
   },
 };

@@ -1,10 +1,9 @@
 "use client";
-import { motion } from "framer-motion";
-import { Icon } from "@iconify/react";
-import { Accordion, AccordionItem, Chip } from "@heroui/react";
 
-import { OrbitingCircles } from "@/components/orbiting-circles";
-import { SectionHeader } from "@/components/about/section-header";
+import { Icon } from "@iconify/react";
+import { Chip } from "@heroui/react";
+
+import { AboutSection } from "@/components/about/about-section";
 import { SITE } from "@/data";
 import { TechGroup } from "@/data/types";
 
@@ -14,74 +13,34 @@ interface SkillsProps {
 }
 
 export const Skills = ({ technologies, title }: SkillsProps) => (
-  <motion.div
-    initial={{ opacity: 0, y: 40 }}
-    transition={{ duration: 0.6 }}
-    viewport={{ once: true }}
-    whileInView={{ opacity: 1, y: 0 }}
-  >
-    <SectionHeader icon="mdi:tools" title={title} />
+  <AboutSection title={title}>
+    <ul className="flex flex-col divide-y divide-divider">
+      {technologies.map(({ key, label, description }) => (
+        <li key={key} className="py-6 first:pt-0 last:pb-0">
+          <h3 className="font-medium">{label}</h3>
+          <p className="mt-1 text-sm text-foreground-600">{description}</p>
 
-    <Accordion
-      defaultExpandedKeys={technologies.map(({ key }) => key)}
-      selectionMode="multiple"
-      variant="bordered"
-    >
-      {technologies.map(({ key, label, description }) => {
-        // Tool names and icons are language-invariant, so they come from SITE.
-        const tools = SITE.tech[key];
-
-        return (
-          <AccordionItem
-            key={key}
-            aria-label={label}
-            classNames={{ trigger: "cursor-pointer py-4" }}
-            title={label}
-          >
-            <p className="mb-4 text-sm text-muted-foreground">{description}</p>
-
-            <div className="flex flex-wrap gap-2">
-              {tools.map((tool) => (
-                <Chip
-                  key={tool.name}
-                  startContent={
-                    <Icon
-                      className="ml-1"
-                      height={16}
-                      icon={tool.icon}
-                      width={16}
-                    />
-                  }
-                  variant="flat"
-                >
-                  {tool.name}
-                </Chip>
-              ))}
-            </div>
-
-            {/* Decorative: the tool names are already listed as chips above. Each
-                orbiting icon sits in a full-size absolute box (so it rotates around
-                the container's centre), which means the boxes cover this whole area
-                — they must not take pointer events or they swallow clicks. */}
-            <div className="pointer-events-none relative h-[300px] w-full overflow-hidden">
-              <OrbitingCircles
-                className="h-full w-full"
-                duration={20}
-                radius={120}
-              >
-                {tools.map((tool) => (
+          {/* Tool names and icons are language-invariant, so they come from SITE. */}
+          <div className="mt-4 flex flex-wrap gap-2">
+            {SITE.tech[key].map((tool) => (
+              <Chip
+                key={tool.name}
+                startContent={
                   <Icon
-                    key={tool.name}
-                    height={24}
+                    className="ml-1"
+                    height={16}
                     icon={tool.icon}
-                    width={24}
+                    width={16}
                   />
-                ))}
-              </OrbitingCircles>
-            </div>
-          </AccordionItem>
-        );
-      })}
-    </Accordion>
-  </motion.div>
+                }
+                variant="flat"
+              >
+                {tool.name}
+              </Chip>
+            ))}
+          </div>
+        </li>
+      ))}
+    </ul>
+  </AboutSection>
 );

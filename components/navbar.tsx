@@ -12,8 +12,6 @@ import {
   NavbarMenu,
   NavbarMenuItem,
 } from "@heroui/react";
-import { Icon } from "@iconify/react";
-import { motion } from "framer-motion";
 
 import { useI18n } from "@/components/i18n-provider";
 import { LanguageSwitcher } from "@/components/language-switcher";
@@ -22,65 +20,57 @@ import { SITE } from "@/data";
 
 export const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const pathname = usePathname();
+  // trailingSlash: true in next.config.js makes the exported URL "/vi/about/"
+  // while the links are built as "/vi/about"; compare without the slash or no
+  // item is ever marked current.
+  const pathname = usePathname().replace(/\/+$/, "") || "/";
   const { dict, path } = useI18n();
 
   const menuItems = [
-    { name: dict.nav.home, href: path("/"), icon: "lucide:home" },
-    { name: dict.nav.about, href: path("/about"), icon: "lucide:user" },
-    {
-      name: dict.nav.projects,
-      href: path("/projects"),
-      icon: "lucide:folder-git-2",
-    },
-    { name: dict.nav.contact, href: path("/contact"), icon: "lucide:send" },
+    { name: dict.nav.home, href: path("/") },
+    { name: dict.nav.about, href: path("/about") },
+    { name: dict.nav.projects, href: path("/projects") },
+    { name: dict.nav.contact, href: path("/contact") },
   ];
+
+  // Colour only marks the current page: a weight change would shift the row.
+  // primary-600 is the accent shade for small text: darker blue on light,
+  // lighter blue on dark (the theme mirrors the scale). Plain primary is
+  // 4.5:1 on light and 3.8:1 on dark, too low at 14px.
+  const linkClass = (href: string) =>
+    pathname === href
+      ? "text-primary-600"
+      : "text-foreground-600 hover:text-foreground";
 
   return (
     <Navbar
       isBordered
-      className="bg-background/70 backdrop-blur-md border-b border-divider"
+      className="bg-background/80 backdrop-blur-md border-b border-divider"
       isMenuOpen={isMenuOpen}
       maxWidth="xl"
       onMenuOpenChange={setIsMenuOpen}
     >
       <NavbarContent className="flex justify-between items-center w-full">
         <NavbarBrand>
-          <motion.div
-            animate={{ opacity: 1, x: 0 }}
-            initial={{ opacity: 0, x: -20 }}
-            transition={{ duration: 0.5 }}
+          <Link
+            className="font-medium text-base text-foreground"
+            href={path("/")}
+            onClick={() => setIsMenuOpen(false)}
           >
-            <Link
-              className="text-brand-gradient font-bold text-xl"
-              href={path("/")}
-              onClick={() => setIsMenuOpen(false)}
-            >
-              {SITE.name}
-            </Link>
-          </motion.div>
+            {SITE.name}
+          </Link>
         </NavbarBrand>
 
         <NavbarContent className="hidden sm:flex justify-center gap-6 flex-grow">
-          {menuItems.map((item, index) => (
+          {menuItems.map((item) => (
             <NavbarItem key={item.href}>
-              <motion.div
-                animate={{ opacity: 1, y: 0 }}
-                initial={{ opacity: 0, y: -10 }}
-                transition={{ delay: index * 0.1, duration: 0.5 }}
+              <Link
+                aria-current={pathname === item.href ? "page" : undefined}
+                className={`text-sm transition-colors ${linkClass(item.href)}`}
+                href={item.href}
               >
-                <Link
-                  className={`flex items-center gap-2 transition-colors ${
-                    pathname === item.href
-                      ? "text-primary-500 font-semibold"
-                      : "text-foreground hover:text-primary-500"
-                  }`}
-                  href={item.href}
-                >
-                  <Icon className="w-5 h-5 text-primary-500" icon={item.icon} />
-                  {item.name}
-                </Link>
-              </motion.div>
+                {item.name}
+              </Link>
             </NavbarItem>
           ))}
         </NavbarContent>
@@ -97,24 +87,18 @@ export const Navigation = () => {
       </NavbarContent>
 
       {/* Mobile Menu */}
-      <NavbarMenu className="bg-background/80 backdrop-blur-lg pt-6 sm:hidden">
-        <div className="mx-auto max-w-lg space-y-4">
-          {menuItems.map((item, index) => (
+      <NavbarMenu className="bg-background/95 backdrop-blur-lg pt-6 sm:hidden">
+        <div className="mx-auto w-full max-w-lg space-y-1">
+          {menuItems.map((item) => (
             <NavbarMenuItem key={item.href}>
-              <motion.div
-                animate={{ opacity: 1, x: 0 }}
-                initial={{ opacity: 0, x: -20 }}
-                transition={{ delay: index * 0.1, duration: 0.5 }}
+              <Link
+                aria-current={pathname === item.href ? "page" : undefined}
+                className={`block w-full rounded-medium px-4 py-3 transition-colors hover:bg-content1 ${linkClass(item.href)}`}
+                href={item.href}
+                onClick={() => setIsMenuOpen(false)}
               >
-                <Link
-                  className="w-full flex items-center gap-3 py-3 px-4 rounded-medium hover:bg-content1 transition-colors"
-                  href={item.href}
-                  onClick={() => setIsMenuOpen(false)}
-                >
-                  <Icon className="w-5 h-5 text-primary-500" icon={item.icon} />
-                  {item.name}
-                </Link>
-              </motion.div>
+                {item.name}
+              </Link>
             </NavbarMenuItem>
           ))}
         </div>

@@ -15,7 +15,7 @@ export const PageWrapper = ({ children }: PageWrapperProps) => {
     <motion.div
       key={pathname}
       animate="animate"
-      className="min-h-screen"
+      className="flex-1"
       exit="exit"
       initial="initial"
       transition={pageTransition}
@@ -26,25 +26,15 @@ export const PageWrapper = ({ children }: PageWrapperProps) => {
   );
 };
 
+// A short fade between pages. No slide or zoom: the content should not move
+// under the reader, and each page already has at most one entrance of its own.
 const pageVariants = {
-  initial: {
-    opacity: 0,
-    y: 30,
-    scale: 0.98,
-  },
-  animate: {
-    opacity: 1,
-    y: 0,
-    scale: 1,
-  },
-  exit: {
-    opacity: 0,
-    y: -20,
-    scale: 0.98,
-  },
+  initial: { opacity: 0 },
+  animate: { opacity: 1 },
+  exit: { opacity: 0 },
 };
 
 const pageTransition = {
-  duration: 0.4,
-  ease: [0.4, 0, 0.2, 1],
+  duration: 0.2,
+  ease: [0.22, 1, 0.36, 1],
 };

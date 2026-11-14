@@ -1,11 +1,10 @@
 import type { Metadata } from "next";
 
+import { AboutSection } from "@/components/about/about-section";
 import { Certifications } from "@/components/about/certifications";
-import { ProfileCard } from "@/components/about/profile-card";
-import { EducationTimeline } from "@/components/about/timelines/education-timeline";
-import { ExperienceTimeline } from "@/components/about/timelines/experience-timeline";
+import { ProfileIntro } from "@/components/about/profile-intro";
 import { Skills } from "@/components/about/skills";
-import { PageHeader } from "@/components/page-header";
+import { Timeline } from "@/components/about/timeline";
 import { getDictionary, isLocale, SITE } from "@/data";
 
 type PageProps = { params: Promise<{ locale: string }> };
@@ -28,32 +27,34 @@ export async function generateMetadata({
 export default async function AboutPage({ params }: PageProps) {
   const { locale } = await params;
   const dict = getDictionary(isLocale(locale) ? locale : "en");
-  const { about, morphingTexts } = dict;
+  const { about, contact } = dict;
 
   return (
-    <section className="py-20 px-6 md:px-12 max-w-5xl mx-auto text-foreground">
-      <PageHeader texts={morphingTexts.about} />
-      <ProfileCard
+    <div className="mx-auto max-w-5xl px-6 py-16 text-foreground md:py-24">
+      {/* The name is the page title. The old morphing header cycled through
+          single words ("Curious", "Full-stack", ...) and blurred the Vietnamese
+          diacritics mid-morph. */}
+      <ProfileIntro
         description={about.description}
         image={SITE.image}
+        meta={`${about.profileTitle} · ${contact.location}`}
         name={SITE.name}
-        title={about.profileTitle}
       />
 
-      <EducationTimeline
-        education={about.education}
-        title={about.sections.education}
-      />
+      <AboutSection title={about.sections.education}>
+        <Timeline entries={about.education} />
+      </AboutSection>
+
       <Certifications
         labels={about.certifications}
         title={about.sections.certifications}
       />
-      <ExperienceTimeline
-        experience={about.experience}
-        researchUrl={SITE.research.url}
-        title={about.sections.experience}
-      />
+
+      <AboutSection title={about.sections.experience}>
+        <Timeline entries={about.experience} linkUrl={SITE.research.url} />
+      </AboutSection>
+
       <Skills technologies={about.technologies} title={about.sections.skills} />
-    </section>
+    </div>
   );
 }

@@ -1,71 +1,64 @@
 "use client";
 
-import { motion } from "framer-motion";
 import { Button, Link } from "@heroui/react";
 import { Icon } from "@iconify/react";
 
 import { ContactMethod } from "@/components/contact/types";
 
-interface ContactMethodsProps {
-  methods: readonly ContactMethod[];
-  primaryHref: string;
-  primaryLabel: string;
-}
+/** mailto:/tel: open an app on this device; everything else is a new tab. */
+const isExternalHref = (href: string) =>
+  !href.startsWith("mailto:") && !href.startsWith("tel:");
 
+/**
+ * One card, one row per channel, hairlines between rows. Icons take the muted
+ * text color: the values are what people came for, so they carry the contrast.
+ */
 export const ContactMethods = ({
   methods,
-  primaryHref,
-  primaryLabel,
-}: ContactMethodsProps) => (
-  <div className="flex flex-col gap-8">
-    <ul className="flex flex-col gap-4">
-      {methods.map((method, index) => (
-        <motion.li
-          key={method.label}
-          className="flex items-center gap-4 rounded-medium border border-divider p-4"
-          initial={{ opacity: 0, y: 12 }}
-          transition={{ delay: index * 0.08, duration: 0.5 }}
-          viewport={{ once: true }}
-          whileInView={{ opacity: 1, y: 0 }}
-        >
-          <div className="p-2.5 rounded-full bg-primary-100 shrink-0">
-            <Icon className="w-5 h-5 text-primary-500" icon={method.icon} />
-          </div>
-          <div className="min-w-0">
-            <p className="text-sm text-foreground-500">{method.label}</p>
-            {method.href ? (
-              <Link
-                className="text-foreground break-all"
-                href={method.href}
-                isExternal={
-                  !method.href.startsWith("mailto:") &&
-                  !method.href.startsWith("tel:")
-                }
-                showAnchorIcon={
-                  !method.href.startsWith("mailto:") &&
-                  !method.href.startsWith("tel:")
-                }
-              >
-                {method.value}
-              </Link>
-            ) : (
-              <p className="text-foreground">{method.value}</p>
-            )}
-          </div>
-        </motion.li>
-      ))}
-    </ul>
+}: {
+  methods: readonly ContactMethod[];
+}) => (
+  <ul className="divide-y divide-divider rounded-2xl border border-divider bg-content1">
+    {methods.map((method) => (
+      <li key={method.label} className="flex items-center gap-4 px-5 py-4">
+        <Icon
+          aria-hidden
+          className="h-[18px] w-[18px] shrink-0 text-foreground-500"
+          icon={method.icon}
+        />
+        <div className="min-w-0">
+          <p className="text-sm text-foreground-500">{method.label}</p>
+          {method.href ? (
+            // break-words, not break-all: wrap only when the value cannot fit,
+            // and then at a sensible point instead of mid-word.
+            <Link
+              className="break-words"
+              color="foreground"
+              href={method.href}
+              isExternal={isExternalHref(method.href)}
+              showAnchorIcon={isExternalHref(method.href)}
+              underline="hover"
+            >
+              {method.value}
+            </Link>
+          ) : (
+            <p className="text-foreground">{method.value}</p>
+          )}
+        </div>
+      </li>
+    ))}
+  </ul>
+);
 
-    <Button
-      aria-label={primaryLabel}
-      as={Link}
-      color="primary"
-      endContent={<Icon icon="lucide:mail" />}
-      href={primaryHref}
-      size="lg"
-      variant="shadow"
-    >
-      {primaryLabel}
-    </Button>
-  </div>
+export const EmailButton = ({ href, label }: { href: string; label: string }) => (
+  <Button
+    as={Link}
+    className="w-full sm:w-auto"
+    color="primary"
+    endContent={<Icon icon="lucide:mail" />}
+    href={href}
+    size="lg"
+  >
+    {label}
+  </Button>
 );

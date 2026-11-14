@@ -2,7 +2,6 @@ import { ProjectKey, TechKey } from "@/data/site";
 
 export interface FocusItem {
   title: string;
-  icon: string;
   description: string;
 }
 
@@ -47,12 +46,13 @@ export interface Dictionary {
 
   home: {
     hero: {
-      greeting: string;
       title: string;
       headline: string;
       subtitle: string;
       primaryAction: string;
       secondaryAction: string;
+      /** Caption under the LifeHub preview in the hero; links to /projects. */
+      previewCaption: string;
     };
     focus: {
       sectionTitle: string;
@@ -102,7 +102,10 @@ export interface Dictionary {
   };
 
   contact: {
+    /** Short page title (h1). */
     heading: string;
+    /** Paragraph under the title; also the page's meta description. */
+    description: string;
     labels: {
       email: string;
       phone: string;
@@ -118,11 +121,7 @@ export interface Dictionary {
     connectTitle: string;
     contactTitle: string;
     description: string;
-  };
-
-  morphingTexts: {
-    about: string[];
-    projects: string[];
-    contact: string[];
+    /** True fact shown in the footer meta line: the site runs on the owner's Pi. */
+    selfHosted: string;
   };
 }

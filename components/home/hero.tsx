@@ -5,107 +5,72 @@ import { motion } from "framer-motion";
 import { Button, Link } from "@heroui/react";
 import { Icon } from "@iconify/react";
 
-import { Hole } from "@/components/backgrounds/hole/hole";
 import { useI18n } from "@/components/i18n-provider";
 import { SITE } from "@/data";
 
-export const HeroSection = ({
-  showBackground = true,
-}: {
-  showBackground?: boolean;
-}) => {
+/** The hero's one visual is a real product, not decoration: LifeHub, built and self-hosted by the owner. */
+const lifehub = SITE.projects.find((p) => p.key === "lifehub");
+
+export const HeroSection = () => {
   const { dict, path } = useI18n();
   const {
-    greeting,
     title,
     headline,
     subtitle,
     primaryAction,
     secondaryAction,
+    previewCaption,
   } = dict.home.hero;
 
   return (
-    <section className="min-h-[calc(100vh-64px)] flex items-center justify-center relative overflow-hidden bg-background">
-      {showBackground && <Hole />}
-      <div className="absolute inset-0 bg-gradient-to-b from-primary-500/10 to-transparent" />
-      <div className="container mx-auto px-4 z-10">
-        <motion.div
-          animate={{ opacity: 1, y: 0 }}
-          className="text-center max-w-4xl mx-auto"
-          initial={{ opacity: 0, y: 20 }}
-          transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-        >
-          <motion.div
-            animate={{ opacity: 1, scale: 1 }}
-            className="mb-8 flex justify-center"
-            initial={{ opacity: 0, scale: 0.9 }}
-            transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-          >
-            <div className="relative">
-              <div className="absolute -inset-1 rounded-full bg-gradient-to-br from-primary-500 to-secondary-500 opacity-70 blur-md" />
-              <Image
-                priority
-                alt={SITE.name}
-                className="relative h-36 w-36 rounded-full object-cover object-top ring-2 ring-background/80 shadow-xl"
-                height={144}
-                sizes="144px"
-                src={SITE.image}
-                width={144}
-              />
+    // No full-viewport min-height: the next section should start just below
+    // the fold so the first screen invites a scroll instead of ending in a
+    // dead band.
+    <section className="container mx-auto max-w-6xl px-6 py-16 md:py-24 lg:py-28">
+      {/* The page's only entrance on load: a short fade and rise. */}
+      <motion.div
+        animate={{ opacity: 1, y: 0 }}
+        className="grid w-full items-center gap-12 lg:grid-cols-[minmax(0,5fr)_minmax(0,7fr)] lg:gap-16"
+        initial={{ opacity: 0, y: 8 }}
+        transition={{ duration: 0.4, ease: [0.22, 1, 0.36, 1] }}
+      >
+        <div>
+          <div className="mb-8 flex items-center gap-3">
+            <Image
+              priority
+              alt={SITE.name}
+              className="h-12 w-12 rounded-full object-cover object-top"
+              height={48}
+              sizes="48px"
+              src={SITE.image}
+              width={48}
+            />
+            <div>
+              <p className="font-medium text-foreground">{SITE.name}</p>
+              <p className="font-mono text-xs text-foreground-500">{title}</p>
             </div>
-          </motion.div>
+          </div>
 
-          <motion.h1
-            animate={{ opacity: 1, y: 0 }}
-            className="text-brand-gradient text-4xl md:text-6xl font-bold mb-6"
-            initial={{ opacity: 0, y: 20 }}
-            transition={{ delay: 0.2, duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-          >
-            {greeting} {SITE.name}
-            <span className="block mt-3 text-2xl md:text-4xl">{headline}</span>
-          </motion.h1>
+          <h1 className="text-4xl font-medium leading-[1.1] tracking-[-0.02em] text-foreground md:text-5xl xl:text-[56px]">
+            {headline}
+          </h1>
 
-          <motion.p
-            animate={{ opacity: 1, y: 0 }}
-            className="text-foreground-500 text-sm md:text-base mb-4 font-medium uppercase tracking-widest"
-            initial={{ opacity: 0, y: 20 }}
-            transition={{ delay: 0.3, duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-          >
-            {title}
-          </motion.p>
-
-          <motion.p
-            animate={{ opacity: 1, y: 0 }}
-            className="text-foreground-600 text-lg md:text-xl mb-8 leading-relaxed"
-            initial={{ opacity: 0, y: 20 }}
-            transition={{ delay: 0.4, duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-          >
+          <p className="mt-6 max-w-xl text-lg leading-relaxed text-foreground-600">
             {subtitle}
-          </motion.p>
+          </p>
 
-          <motion.div
-            animate={{ opacity: 1, y: 0 }}
-            className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center"
-            initial={{ opacity: 0, y: 20 }}
-            transition={{ delay: 0.6, duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-          >
+          <div className="mt-10 flex flex-col gap-3 sm:flex-row">
             <Button
-              aria-label={primaryAction}
               as={Link}
-              className="w-full sm:w-auto"
               color="primary"
               endContent={<Icon icon="lucide:send" />}
               href={path("/contact")}
               size="lg"
-              variant="shadow"
             >
               {primaryAction}
             </Button>
             <Button
-              aria-label={secondaryAction}
               as={Link}
-              className="w-full sm:w-auto"
-              color="primary"
               endContent={<Icon icon="lucide:arrow-right" />}
               href={path("/about")}
               size="lg"
@@ -113,9 +78,43 @@ export const HeroSection = ({
             >
               {secondaryAction}
             </Button>
-          </motion.div>
-        </motion.div>
-      </div>
+          </div>
+        </div>
+
+        {lifehub && (
+          <figure>
+            <div className="overflow-hidden rounded-2xl border border-divider bg-content1 shadow-[0_8px_24px_rgba(0,0,0,0.06)] dark:shadow-none">
+              <div className="flex h-9 items-center gap-2 border-b border-divider px-4">
+                <Icon
+                  className="h-3 w-3 text-foreground-400"
+                  icon="lucide:lock"
+                />
+                <span className="font-mono text-xs text-foreground-500">
+                  app.ptp-phamphong.com
+                </span>
+              </div>
+              <Image
+                priority
+                alt={previewCaption}
+                className="h-auto w-full"
+                height={1800}
+                sizes="(max-width: 1024px) 100vw, 680px"
+                src={lifehub.image}
+                width={2880}
+              />
+            </div>
+            <figcaption className="mt-4">
+              <Link
+                className="gap-2 text-sm text-foreground-600 transition-colors hover:text-foreground"
+                href={path("/projects")}
+              >
+                {previewCaption}
+                <Icon className="h-4 w-4" icon="lucide:arrow-right" />
+              </Link>
+            </figcaption>
+          </figure>
+        )}
+      </motion.div>
     </section>
   );
 };

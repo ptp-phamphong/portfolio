@@ -44,7 +44,7 @@ export const LanguageSwitcher = () => {
         >
           <span className="flex items-center gap-1">
             <Icon icon="lucide:languages" width={18} />
-            <span className="text-xs font-semibold">
+            <span className="text-xs font-medium">
               {getDictionary(locale).languageShort}
             </span>
           </span>

@@ -14,39 +14,35 @@ export const en: Dictionary = {
 
   home: {
     hero: {
-      greeting: "Hi, I'm",
-      title: "Full-stack Developer",
-      headline: "I build web applications end to end.",
+      title: "Full-stack developer",
+      headline: "I build web applications end to end",
       subtitle:
         "I have a background in both Computer Science and Management Information Systems. I take features from the first requirements meeting all the way to production.",
       primaryAction: "Get in touch",
       secondaryAction: "About me",
+      previewCaption: "LifeHub, an app I built and run myself",
     },
     focus: {
       sectionTitle: "What I do",
-      sectionDescription: "How I approach engineering work.",
+      sectionDescription: "How I approach engineering work",
       items: [
         {
           title: "Full-stack development",
-          icon: "lucide:layers",
           description:
             "Angular and React on the front end, C# and .NET on the back end, SQL Server for the data. I build each feature across all of these layers, from design to release.",
         },
         {
           title: "Requirements and product thinking",
-          icon: "lucide:clipboard-list",
           description:
             "My Management Information Systems background helps me work with stakeholders to pin down requirements. I want to know why a system is needed before I decide how to build it.",
         },
         {
           title: "AI-assisted engineering",
-          icon: "lucide:sparkles",
           description:
             "I use Claude, Codex and GitHub Copilot every day. At work I build custom Copilot skills and agents that take over repetitive development tasks, and I hold Microsoft certifications in designing AI agents.",
         },
         {
           title: "Independent problem solving",
-          icon: "lucide:compass",
           description:
             "I pick up unfamiliar tools quickly and research problems on my own until I have a fix I trust. LifeHub is one example: I set up and run its whole stack on a Raspberry Pi myself, including HTTPS, backups and a sandboxed demo.",
         },
@@ -55,13 +51,13 @@ export const en: Dictionary = {
     cta: {
       title: "Let's work together",
       description:
-        "If you have a project or a technical problem in mind, I'd be glad to talk it through.",
+        "If you have a project or a technical problem in mind, I'd be glad to talk it through",
       buttonLabel: "Email me",
     },
   },
 
   about: {
-    profileTitle: "Full-stack Developer",
+    profileTitle: "Full-stack developer",
     description: [
       "I'm a full-stack developer at Precio Fishbone, working on an NGO management platform used by international organizations across Europe. My main stack is Angular and React on the front end, C# and .NET on the back end, and SQL Server and other relational databases for the data.",
       "My background covers both Computer Science and Management Information Systems, so I care about what a system should do and why, as well as how it's built. I work with stakeholders while requirements are still being defined, and I raise open questions early, while they're still cheap to answer.",
@@ -75,7 +71,7 @@ export const en: Dictionary = {
     },
     certifications: {
       description:
-        "Microsoft certifications in Power Platform solution design, business requirements, building AI agents in Copilot Studio, and agentic AI solution architecture.",
+        "Microsoft certifications in Power Platform solution design, business requirements, building AI agents in Copilot Studio, and agentic AI solution architecture",
       issuer: "Microsoft",
       earned: "Earned",
       verify: "Verify credential",
@@ -87,7 +83,7 @@ export const en: Dictionary = {
         icon: "mdi:school",
         logo: "/logos/hcmut.png",
         description:
-          "Computer Science. Some courses I learn: data structures, algorithms, software engineering and databases.",
+          "Computer Science. Courses included data structures, algorithms, software engineering and databases.",
       },
       {
         title: "University of Economics Ho Chi Minh City (UEH)",
@@ -100,7 +96,7 @@ export const en: Dictionary = {
     ],
     experience: [
       {
-        title: "Full-stack Developer · Precio Fishbone",
+        title: "Full-stack developer · Precio Fishbone",
         date: "06/2023 – Present",
         icon: "mdi:briefcase",
         logo: "/logos/precio-fishbone.svg",
@@ -108,7 +104,7 @@ export const en: Dictionary = {
           "Work on an NGO management platform used by international organizations across Europe. Develop its core modules in Angular, .NET and SharePoint, and keep the stack on current Angular and .NET versions through regular upgrades. Build client-specific customizations, fix issues in client environments, and run CI/CD pipelines and releases in Azure DevOps. Also build GitHub Copilot skills and agents that automate repetitive development tasks.",
       },
       {
-        title: "Research Assistant · IAS Lab, HCMUT",
+        title: "Research assistant · IAS Lab, HCMUT",
         date: "01/2022 – 09/2022",
         icon: "mdi:brain",
         logo: "/logos/iaslab.png",
@@ -117,7 +113,7 @@ export const en: Dictionary = {
         linkLabel: "Published paper (Springer, 2023)",
       },
       {
-        title: "Sales Consultant · 1Office",
+        title: "Sales consultant · 1Office",
         date: "03/2021 – 01/2022",
         icon: "mdi:handshake-outline",
         logo: "/logos/1office.png",
@@ -131,24 +127,24 @@ export const en: Dictionary = {
         key: "frontend",
         label: "Frontend",
         description:
-          "Interfaces built from typed, reusable components that work on both phones and desktops.",
+          "Interfaces built from typed, reusable components that work on both phones and desktops",
       },
       {
         key: "backend",
         label: "Backend",
-        description: "APIs, services and the business logic behind the interface.",
+        description: "APIs, services and the business logic behind the interface",
       },
       {
         key: "databases",
         label: "Databases",
         description:
-          "Designing and querying the relational databases behind these applications.",
+          "Designing and querying the relational databases behind these applications",
       },
       {
         key: "ai",
-        label: "AI Tools",
+        label: "AI tools",
         description:
-          "Tools I use every day at work, and a field I keep studying on my own time.",
+          "Tools I use every day at work, and a field I keep studying on my own time",
       },
     ],
   },
@@ -182,7 +178,8 @@ export const en: Dictionary = {
   },
 
   contact: {
-    heading:
+    heading: "Get in touch",
+    description:
       "I'm happy to talk about projects, collaborations or technical questions. Use whichever channel suits you.",
     labels: {
       email: "Email",
@@ -200,11 +197,6 @@ export const en: Dictionary = {
     contactTitle: "Contact",
     description:
       "Full-stack developer in Ho Chi Minh City. I build web applications from requirements to release.",
-  },
-
-  morphingTexts: {
-    about: ["Curious", "Full-stack", "Developer"],
-    projects: ["Things", "I've", "Built"],
-    contact: ["Get", "In", "Touch"],
+    selfHosted: "Self-hosted on a Raspberry Pi",
   },
 };

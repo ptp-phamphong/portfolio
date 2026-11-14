@@ -19,7 +19,7 @@ export const SITE = {
       icon: "mdi:linkedin",
     },
     github: {
-      handle: "phong-pham-thanh",
+      handle: "ptp-phamphong",
       url: "https://github.com/ptp-phamphong",
       icon: "mdi:github",
     },
@@ -46,7 +46,6 @@ export const SITE = {
   projects: [
     {
       key: "lifehub",
-      icon: "lucide:layout-dashboard",
       image: "/projects/lifehub.png",
       tech: [
         { name: "Angular", icon: "logos:angular-icon" },
@@ -64,7 +63,6 @@ export const SITE = {
     },
     {
       key: "portfolio",
-      icon: "lucide:globe",
       image: "/projects/portfolio.jpg",
       tech: [
         { name: "Next.js", icon: "logos:nextjs-icon" },

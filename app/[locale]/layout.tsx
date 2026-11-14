@@ -2,7 +2,7 @@ import "@/app/globals.css";
 
 import { clsx } from "clsx";
 import { type Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Be_Vietnam_Pro, JetBrains_Mono } from "next/font/google";
 import { notFound } from "next/navigation";
 
 import { getDictionary, isLocale, Locale, LOCALES, SITE } from "@/data";
@@ -11,11 +11,19 @@ import { I18nProvider } from "@/components/i18n-provider";
 import { Navigation } from "@/components/navbar";
 import { PageWrapper } from "@/components/page-wrapper";
 import { Providers } from "@/app/providers";
-import { StarsBackground } from "@/components/backgrounds/stars";
 
-const inter = Inter({
+// Same family as LifeHub, so the products read as one person's work. Not a
+// variable font, so every weight in use must be listed.
+const sans = Be_Vietnam_Pro({
   subsets: ["latin", "vietnamese"],
+  weight: ["400", "500", "600"],
   variable: "--font-sans",
+});
+
+// Meta text only: dates, URLs, demo credentials.
+const mono = JetBrains_Mono({
+  subsets: ["latin", "vietnamese"],
+  variable: "--font-mono",
 });
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000";
@@ -85,7 +93,10 @@ export default async function RootLayout({
   const dict = getDictionary(locale);
 
   const content = (
-    <main className="bg-background min-h-screen bg-gradient-to-b from-background to-content2">
+    // Flex column: the page grows to push the footer to the bottom only when
+    // the content is shorter than the window, instead of every page reserving
+    // a full screen height (which left a dead band under short pages).
+    <main className="flex min-h-screen flex-col bg-background">
       <Navigation />
       <PageWrapper>{children}</PageWrapper>
       <Footer />
@@ -97,12 +108,13 @@ export default async function RootLayout({
       <body
         className={clsx(
           "min-h-screen bg-background font-sans antialiased",
-          inter.variable,
+          sans.variable,
+          mono.variable,
         )}
       >
         <Providers themeProps={{ attribute: "class", defaultTheme: "dark" }}>
           <I18nProvider dict={dict} locale={locale}>
-            <StarsBackground>{content}</StarsBackground>
+            {content}
           </I18nProvider>
         </Providers>
       </body>
