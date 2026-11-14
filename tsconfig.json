@@ -38,6 +38,7 @@
     "app/contact"
   ],
   "exclude": [
-    "node_modules"
+    "node_modules",
+    "temp_running_process"
   ]
 }
