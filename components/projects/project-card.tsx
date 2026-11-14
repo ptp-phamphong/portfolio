@@ -1,10 +1,10 @@
 "use client";
 
-import Image from "next/image";
 import { motion } from "framer-motion";
 import { Button, Card, CardBody, Chip, Link, Snippet } from "@heroui/react";
 import { Icon } from "@iconify/react";
 
+import { ThemedImage } from "@/components/themed-image";
 import { SITE } from "@/data";
 import { Dictionary, ProjectContent } from "@/data/types";
 
@@ -41,9 +41,10 @@ export const ProjectCard = ({
     <Card className="h-full border-none shadow-md overflow-hidden">
       {/* Real screenshot of the running app, cropped to a banner. object-top
           keeps the app's header/nav in frame; the gradient fades it into the
-          card body so text below stays readable. */}
+          card body so text below stays readable. Light and dark shots swap
+          with the theme so the banner always matches the card. */}
       <div className="relative aspect-[16/9] w-full overflow-hidden border-b border-divider">
-        <Image
+        <ThemedImage
           alt={content.title}
           className="object-cover object-top"
           fill

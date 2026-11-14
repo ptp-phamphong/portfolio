@@ -47,7 +47,10 @@ export const SITE = {
     {
       key: "lifehub",
       icon: "lucide:layout-dashboard",
-      image: "/projects/lifehub.png",
+      image: {
+        light: "/projects/lifehub-light.png",
+        dark: "/projects/lifehub-dark.png",
+      },
       tech: [
         { name: "Angular", icon: "logos:angular-icon" },
         { name: ".NET", icon: "logos:dotnet" },
@@ -65,7 +68,10 @@ export const SITE = {
     {
       key: "portfolio",
       icon: "lucide:globe",
-      image: "/projects/portfolio.jpg",
+      image: {
+        light: "/projects/portfolio-light.jpg",
+        dark: "/projects/portfolio-dark.jpg",
+      },
       tech: [
         { name: "Next.js", icon: "logos:nextjs-icon" },
         { name: "React", icon: "logos:react" },
